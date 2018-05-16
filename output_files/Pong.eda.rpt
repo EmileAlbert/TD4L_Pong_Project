@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Pong
-Mon May 14 13:31:46 2018
+Wed May 16 12:02:19 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon May 14 13:31:46 2018 ;
+; EDA Netlist Writer Status ; Successful - Wed May 16 12:02:19 2018 ;
 ; Revision Name             ; Pong                                  ;
 ; Top-level Entity Name     ; Pong                                  ;
 ; Family                    ; MAX 10                                ;
@@ -66,13 +66,13 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+------------------------+
 
 
-+---------------------------------------------------------------+
-; Simulation Generated Files                                    ;
-+---------------------------------------------------------------+
-; Generated Files                                               ;
-+---------------------------------------------------------------+
-; D:/Téléchargements/Pong_restored/simulation/modelsim/Pong.vho ;
-+---------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                                   ;
++------------------------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                                              ;
++------------------------------------------------------------------------------------------------------------------------------+
+; D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/simulation/modelsim/Pong.vho ;
++------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -81,14 +81,14 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Mon May 14 13:31:44 2018
+    Info: Processing started: Wed May 16 12:02:17 2018
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off Pong -c Pong
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Warning (10905): Generated the EDA functional simulation netlist because it is the only supported netlist type for this device.
-Info (204019): Generated file Pong.vho in folder "D:/Téléchargements/Pong_restored/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Pong.vho in folder "D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4690 megabytes
-    Info: Processing ended: Mon May 14 13:31:46 2018
+    Info: Peak virtual memory: 4693 megabytes
+    Info: Processing ended: Wed May 16 12:02:19 2018
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

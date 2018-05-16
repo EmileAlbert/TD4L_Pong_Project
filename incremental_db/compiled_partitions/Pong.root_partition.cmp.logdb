@@ -5,5 +5,4 @@ DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Display:screendata|lpm_mult:Mult4|mult_e
 DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Display:screendata|lpm_mult:Mult5|mult_ens:auto_generated|mac_out2,
 DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Display:screendata|lpm_mult:Mult2|mult_gns:auto_generated|mac_out2,
 DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Display:screendata|lpm_mult:Mult3|mult_ens:auto_generated|mac_out2,
-PORT_SWAPPING,PORT_SWAP_TYPE_DSPMULT,Display:screendata|lpm_mult:Mult0|mult_gns:auto_generated|mac_mult1,
-PORT_SWAPPING,PORT_SWAP_TYPE_DSPMULT,Display:screendata|lpm_mult:Mult2|mult_gns:auto_generated|mac_mult1,
+PORT_SWAPPING,PORT_SWAPPING_FINISHED,Display:screendata|lpm_mult:Mult0|mult_gns:auto_generated|mac_mult1,

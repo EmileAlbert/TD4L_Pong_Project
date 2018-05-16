@@ -1,0 +1,22 @@
+Quartus Prime Archive log --	D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/Pong_VFinal.qarlog
+
+Archive:	D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/Pong_VFinal.qar
+Date:		Wed May 16 12:13:32 2018
+Quartus Prime		17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+	=========== Files Selected: ===========
+D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/Pong.qpf
+D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/Pong.qsf
+D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/Pong.vhd
+D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/Pong_Testbench.vhd
+D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/Pong_assignment_defaults.qdf
+D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/SeptSeg.vhd
+D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/assignment_defaults.qdf
+D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/display.vhd
+D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/divider.vhd
+D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/game.vhd
+D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/vga_driver.vhd
+	======= Total: 11 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

@@ -1,5 +1,5 @@
 Fitter report for Pong
-Mon May 14 13:31:31 2018
+Wed May 16 12:02:01 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -71,18 +71,18 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Mon May 14 13:31:31 2018       ;
+; Fitter Status                      ; Successful - Wed May 16 12:02:01 2018       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Pong                                        ;
 ; Top-level Entity Name              ; Pong                                        ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 668 / 49,760 ( 1 % )                        ;
-;     Total combinational functions  ; 663 / 49,760 ( 1 % )                        ;
-;     Dedicated logic registers      ; 129 / 49,760 ( < 1 % )                      ;
-; Total registers                    ; 129                                         ;
-; Total pins                         ; 20 / 360 ( 6 % )                            ;
+; Total logic elements               ; 819 / 49,760 ( 2 % )                        ;
+;     Total combinational functions  ; 815 / 49,760 ( 2 % )                        ;
+;     Dedicated logic registers      ; 131 / 49,760 ( < 1 % )                      ;
+; Total registers                    ; 131                                         ;
+; Total pins                         ; 22 / 360 ( 6 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 921,600 / 1,677,312 ( 55 % )                ;
 ; Embedded Multiplier 9-bit elements ; 12 / 288 ( 4 % )                            ;
@@ -157,12 +157,12 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.14        ;
+; Average used               ; 1.15        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  14.3%      ;
+;     Processor 2            ;  14.5%      ;
 +----------------------------+-------------+
 
 
@@ -251,12 +251,17 @@ refer to the applicable agreement for further details.
 ; Display:screendata|y[9]                   ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; Display:screendata|y[9]~_Duplicate_1                                ; Q                ;                       ;
 ; Display:screendata|y[9]~_Duplicate_1      ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; Display:screendata|lpm_mult:Mult1|mult_ens:auto_generated|mac_mult1 ; DATAB            ;                       ;
 ; Display:screendata|y[9]~_Duplicate_1      ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; Display:screendata|y[9]~_Duplicate_2                                ; Q                ;                       ;
+; game:pongmove|xballcenter[0]              ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; Display:screendata|lpm_mult:Mult2|mult_gns:auto_generated|mac_mult1 ; DATAA            ;                       ;
+; game:pongmove|xballcenter[0]              ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; game:pongmove|xballcenter[0]~_Duplicate_1                           ; Q                ;                       ;
+; game:pongmove|xballcenter[0]~_Duplicate_1 ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; Display:screendata|lpm_mult:Mult4|mult_ens:auto_generated|mac_mult1 ; DATAA            ;                       ;
+; game:pongmove|xballcenter[0]~_Duplicate_1 ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; game:pongmove|xballcenter[0]~_Duplicate_2                           ; Q                ;                       ;
+; game:pongmove|xballcenter[0]~_Duplicate_2 ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; Display:screendata|lpm_mult:Mult4|mult_ens:auto_generated|mac_mult1 ; DATAB            ;                       ;
+; game:pongmove|xballcenter[0]~_Duplicate_2 ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; game:pongmove|xballcenter[0]~_Duplicate_3                           ; Q                ;                       ;
 ; game:pongmove|xballcenter[1]              ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; Display:screendata|lpm_mult:Mult2|mult_gns:auto_generated|mac_mult1 ; DATAA            ;                       ;
 ; game:pongmove|xballcenter[1]              ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; game:pongmove|xballcenter[1]~_Duplicate_1                           ; Q                ;                       ;
 ; game:pongmove|xballcenter[1]~_Duplicate_1 ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; Display:screendata|lpm_mult:Mult4|mult_ens:auto_generated|mac_mult1 ; DATAA            ;                       ;
 ; game:pongmove|xballcenter[1]~_Duplicate_1 ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; game:pongmove|xballcenter[1]~_Duplicate_2                           ; Q                ;                       ;
 ; game:pongmove|xballcenter[1]~_Duplicate_2 ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; Display:screendata|lpm_mult:Mult4|mult_ens:auto_generated|mac_mult1 ; DATAB            ;                       ;
-; game:pongmove|xballcenter[1]~_Duplicate_2 ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; game:pongmove|xballcenter[1]~_Duplicate_3                           ; Q                ;                       ;
 ; game:pongmove|xballcenter[2]              ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; Display:screendata|lpm_mult:Mult2|mult_gns:auto_generated|mac_mult1 ; DATAA            ;                       ;
 ; game:pongmove|xballcenter[2]              ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; game:pongmove|xballcenter[2]~_Duplicate_1                           ; Q                ;                       ;
 ; game:pongmove|xballcenter[2]~_Duplicate_1 ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; Display:screendata|lpm_mult:Mult4|mult_ens:auto_generated|mac_mult1 ; DATAA            ;                       ;
@@ -299,20 +304,25 @@ refer to the applicable agreement for further details.
 ; game:pongmove|xballcenter[9]~_Duplicate_1 ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; Display:screendata|lpm_mult:Mult4|mult_ens:auto_generated|mac_mult1 ; DATAA            ;                       ;
 ; game:pongmove|xballcenter[9]~_Duplicate_1 ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; game:pongmove|xballcenter[9]~_Duplicate_2                           ; Q                ;                       ;
 ; game:pongmove|xballcenter[9]~_Duplicate_2 ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; Display:screendata|lpm_mult:Mult4|mult_ens:auto_generated|mac_mult1 ; DATAB            ;                       ;
+; game:pongmove|yballcenter[0]              ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; Display:screendata|lpm_mult:Mult0|mult_gns:auto_generated|mac_mult1 ; DATAA            ;                       ;
+; game:pongmove|yballcenter[0]              ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; game:pongmove|yballcenter[0]~_Duplicate_1                           ; Q                ;                       ;
+; game:pongmove|yballcenter[0]~_Duplicate_1 ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; Display:screendata|lpm_mult:Mult5|mult_ens:auto_generated|mac_mult1 ; DATAA            ;                       ;
+; game:pongmove|yballcenter[0]~_Duplicate_1 ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; game:pongmove|yballcenter[0]~_Duplicate_2                           ; Q                ;                       ;
+; game:pongmove|yballcenter[0]~_Duplicate_2 ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; Display:screendata|lpm_mult:Mult5|mult_ens:auto_generated|mac_mult1 ; DATAB            ;                       ;
+; game:pongmove|yballcenter[0]~_Duplicate_2 ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; game:pongmove|yballcenter[0]~_Duplicate_3                           ; Q                ;                       ;
 ; game:pongmove|yballcenter[1]              ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; Display:screendata|lpm_mult:Mult0|mult_gns:auto_generated|mac_mult1 ; DATAA            ;                       ;
 ; game:pongmove|yballcenter[1]              ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; game:pongmove|yballcenter[1]~_Duplicate_1                           ; Q                ;                       ;
 ; game:pongmove|yballcenter[1]~_Duplicate_1 ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; Display:screendata|lpm_mult:Mult5|mult_ens:auto_generated|mac_mult1 ; DATAA            ;                       ;
 ; game:pongmove|yballcenter[1]~_Duplicate_1 ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; game:pongmove|yballcenter[1]~_Duplicate_2                           ; Q                ;                       ;
 ; game:pongmove|yballcenter[1]~_Duplicate_2 ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; Display:screendata|lpm_mult:Mult5|mult_ens:auto_generated|mac_mult1 ; DATAB            ;                       ;
-; game:pongmove|yballcenter[1]~_Duplicate_2 ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; game:pongmove|yballcenter[1]~_Duplicate_3                           ; Q                ;                       ;
 ; game:pongmove|yballcenter[2]              ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; Display:screendata|lpm_mult:Mult0|mult_gns:auto_generated|mac_mult1 ; DATAA            ;                       ;
 ; game:pongmove|yballcenter[2]              ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; game:pongmove|yballcenter[2]~_Duplicate_1                           ; Q                ;                       ;
-; game:pongmove|yballcenter[2]~0            ; Deleted         ; Register Packing ; Timing optimization ; COMBOUT   ;                ;                                                                     ;                  ;                       ;
 ; game:pongmove|yballcenter[2]~_Duplicate_1 ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; Display:screendata|lpm_mult:Mult5|mult_ens:auto_generated|mac_mult1 ; DATAA            ;                       ;
 ; game:pongmove|yballcenter[2]~_Duplicate_1 ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; game:pongmove|yballcenter[2]~_Duplicate_2                           ; Q                ;                       ;
 ; game:pongmove|yballcenter[2]~_Duplicate_2 ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; Display:screendata|lpm_mult:Mult5|mult_ens:auto_generated|mac_mult1 ; DATAB            ;                       ;
 ; game:pongmove|yballcenter[3]              ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; Display:screendata|lpm_mult:Mult0|mult_gns:auto_generated|mac_mult1 ; DATAA            ;                       ;
 ; game:pongmove|yballcenter[3]              ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; game:pongmove|yballcenter[3]~_Duplicate_1                           ; Q                ;                       ;
+; game:pongmove|yballcenter[3]~1            ; Deleted         ; Register Packing ; Timing optimization ; COMBOUT   ;                ;                                                                     ;                  ;                       ;
 ; game:pongmove|yballcenter[3]~_Duplicate_1 ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; Display:screendata|lpm_mult:Mult5|mult_ens:auto_generated|mac_mult1 ; DATAA            ;                       ;
 ; game:pongmove|yballcenter[3]~_Duplicate_1 ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; game:pongmove|yballcenter[3]~_Duplicate_2                           ; Q                ;                       ;
 ; game:pongmove|yballcenter[3]~_Duplicate_2 ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; Display:screendata|lpm_mult:Mult5|mult_ens:auto_generated|mac_mult1 ; DATAB            ;                       ;
@@ -323,7 +333,6 @@ refer to the applicable agreement for further details.
 ; game:pongmove|yballcenter[4]~_Duplicate_2 ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; Display:screendata|lpm_mult:Mult5|mult_ens:auto_generated|mac_mult1 ; DATAB            ;                       ;
 ; game:pongmove|yballcenter[5]              ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; Display:screendata|lpm_mult:Mult0|mult_gns:auto_generated|mac_mult1 ; DATAA            ;                       ;
 ; game:pongmove|yballcenter[5]              ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; game:pongmove|yballcenter[5]~_Duplicate_1                           ; Q                ;                       ;
-; game:pongmove|yballcenter[5]~1            ; Deleted         ; Register Packing ; Timing optimization ; COMBOUT   ;                ;                                                                     ;                  ;                       ;
 ; game:pongmove|yballcenter[5]~_Duplicate_1 ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; Display:screendata|lpm_mult:Mult5|mult_ens:auto_generated|mac_mult1 ; DATAA            ;                       ;
 ; game:pongmove|yballcenter[5]~_Duplicate_1 ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; game:pongmove|yballcenter[5]~_Duplicate_2                           ; Q                ;                       ;
 ; game:pongmove|yballcenter[5]~_Duplicate_2 ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; Display:screendata|lpm_mult:Mult5|mult_ens:auto_generated|mac_mult1 ; DATAB            ;                       ;
@@ -335,6 +344,7 @@ refer to the applicable agreement for further details.
 ; game:pongmove|yballcenter[6]~_Duplicate_2 ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; Display:screendata|lpm_mult:Mult5|mult_ens:auto_generated|mac_mult1 ; DATAB            ;                       ;
 ; game:pongmove|yballcenter[7]              ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; Display:screendata|lpm_mult:Mult0|mult_gns:auto_generated|mac_mult1 ; DATAA            ;                       ;
 ; game:pongmove|yballcenter[7]              ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; game:pongmove|yballcenter[7]~_Duplicate_1                           ; Q                ;                       ;
+; game:pongmove|yballcenter[7]~3            ; Deleted         ; Register Packing ; Timing optimization ; COMBOUT   ;                ;                                                                     ;                  ;                       ;
 ; game:pongmove|yballcenter[7]~_Duplicate_1 ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; Display:screendata|lpm_mult:Mult5|mult_ens:auto_generated|mac_mult1 ; DATAA            ;                       ;
 ; game:pongmove|yballcenter[7]~_Duplicate_1 ; Duplicated      ; Register Packing ; Timing optimization ; Q         ;                ; game:pongmove|yballcenter[7]~_Duplicate_2                           ; Q                ;                       ;
 ; game:pongmove|yballcenter[7]~_Duplicate_2 ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; Display:screendata|lpm_mult:Mult5|mult_ens:auto_generated|mac_mult1 ; DATAB            ;                       ;
@@ -357,8 +367,8 @@ refer to the applicable agreement for further details.
 ; Type                ; Total [A + B]       ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+---------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                     ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 1001 ) ; 0.00 % ( 0 / 1001 )        ; 0.00 % ( 0 / 1001 )      ;
-;     -- Achieved     ; 0.00 % ( 0 / 1001 ) ; 0.00 % ( 0 / 1001 )        ; 0.00 % ( 0 / 1001 )      ;
+;     -- Requested    ; 0.00 % ( 0 / 1162 ) ; 0.00 % ( 0 / 1162 )        ; 0.00 % ( 0 / 1162 )      ;
+;     -- Achieved     ; 0.00 % ( 0 / 1162 ) ; 0.00 % ( 0 / 1162 )        ; 0.00 % ( 0 / 1162 )      ;
 ;                     ;                     ;                            ;                          ;
 ; Routing (by net)    ;                     ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )    ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -381,7 +391,7 @@ refer to the applicable agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 985 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 1146 )   ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 16 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -389,7 +399,7 @@ refer to the applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in D:/Téléchargements/Pong_restored/output_files/Pong.pin.
+The pin-out file can be found in D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/output_files/Pong.pin.
 
 
 +------------------------------------------------------------------------------+
@@ -397,28 +407,28 @@ The pin-out file can be found in D:/Téléchargements/Pong_restored/output_files/P
 +---------------------------------------------+--------------------------------+
 ; Resource                                    ; Usage                          ;
 +---------------------------------------------+--------------------------------+
-; Total logic elements                        ; 668 / 49,760 ( 1 % )           ;
-;     -- Combinational with no register       ; 539                            ;
-;     -- Register only                        ; 5                              ;
-;     -- Combinational with a register        ; 124                            ;
+; Total logic elements                        ; 819 / 49,760 ( 2 % )           ;
+;     -- Combinational with no register       ; 688                            ;
+;     -- Register only                        ; 4                              ;
+;     -- Combinational with a register        ; 127                            ;
 ;                                             ;                                ;
 ; Logic element usage by number of LUT inputs ;                                ;
-;     -- 4 input functions                    ; 236                            ;
-;     -- 3 input functions                    ; 220                            ;
-;     -- <=2 input functions                  ; 207                            ;
-;     -- Register only                        ; 5                              ;
+;     -- 4 input functions                    ; 245                            ;
+;     -- 3 input functions                    ; 300                            ;
+;     -- <=2 input functions                  ; 270                            ;
+;     -- Register only                        ; 4                              ;
 ;                                             ;                                ;
 ; Logic elements by mode                      ;                                ;
-;     -- normal mode                          ; 367                            ;
-;     -- arithmetic mode                      ; 296                            ;
+;     -- normal mode                          ; 392                            ;
+;     -- arithmetic mode                      ; 423                            ;
 ;                                             ;                                ;
-; Total registers*                            ; 129 / 51,509 ( < 1 % )         ;
-;     -- Dedicated logic registers            ; 129 / 49,760 ( < 1 % )         ;
+; Total registers*                            ; 131 / 51,509 ( < 1 % )         ;
+;     -- Dedicated logic registers            ; 131 / 49,760 ( < 1 % )         ;
 ;     -- I/O registers                        ; 0 / 1,749 ( 0 % )              ;
 ;                                             ;                                ;
-; Total LABs:  partially or completely used   ; 57 / 3,110 ( 2 % )             ;
+; Total LABs:  partially or completely used   ; 69 / 3,110 ( 2 % )             ;
 ; Virtual pins                                ; 0                              ;
-; I/O pins                                    ; 20 / 360 ( 6 % )               ;
+; I/O pins                                    ; 22 / 360 ( 6 % )               ;
 ;     -- Clock pins                           ; 1 / 8 ( 13 % )                 ;
 ;     -- Dedicated input pins                 ; 1 / 1 ( 100 % )                ;
 ;                                             ;                                ;
@@ -429,19 +439,19 @@ The pin-out file can be found in D:/Téléchargements/Pong_restored/output_files/P
 ; Total block memory implementation bits      ; 1,041,408 / 1,677,312 ( 62 % ) ;
 ; Embedded Multiplier 9-bit elements          ; 12 / 288 ( 4 % )               ;
 ; PLLs                                        ; 0 / 4 ( 0 % )                  ;
-; Global signals                              ; 3                              ;
-;     -- Global clocks                        ; 3 / 20 ( 15 % )                ;
+; Global signals                              ; 4                              ;
+;     -- Global clocks                        ; 4 / 20 ( 20 % )                ;
 ; JTAGs                                       ; 0 / 1 ( 0 % )                  ;
 ; CRC blocks                                  ; 0 / 1 ( 0 % )                  ;
 ; Remote update blocks                        ; 0 / 1 ( 0 % )                  ;
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )                  ;
 ; Impedance control blocks                    ; 0 / 1 ( 0 % )                  ;
-; Average interconnect usage (total/H/V)      ; 2.4% / 2.3% / 2.5%             ;
-; Peak interconnect usage (total/H/V)         ; 11.7% / 10.8% / 13.3%          ;
+; Average interconnect usage (total/H/V)      ; 2.8% / 2.6% / 3.1%             ;
+; Peak interconnect usage (total/H/V)         ; 14.0% / 12.4% / 16.8%          ;
 ; Maximum fan-out                             ; 298                            ;
 ; Highest non-global fan-out                  ; 190                            ;
-; Total fan-out                               ; 5892                           ;
-; Average fan-out                             ; 5.99                           ;
+; Total fan-out                               ; 6323                           ;
+; Average fan-out                             ; 5.54                           ;
 +---------------------------------------------+--------------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -454,34 +464,34 @@ The pin-out file can be found in D:/Téléchargements/Pong_restored/output_files/P
 +---------------------------------------------+-----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                   ; Low                            ;
 ;                                             ;                       ;                                ;
-; Total logic elements                        ; 668 / 49760 ( 1 % )   ; 0 / 49760 ( 0 % )              ;
-;     -- Combinational with no register       ; 539                   ; 0                              ;
-;     -- Register only                        ; 5                     ; 0                              ;
-;     -- Combinational with a register        ; 124                   ; 0                              ;
+; Total logic elements                        ; 819 / 49760 ( 2 % )   ; 0 / 49760 ( 0 % )              ;
+;     -- Combinational with no register       ; 688                   ; 0                              ;
+;     -- Register only                        ; 4                     ; 0                              ;
+;     -- Combinational with a register        ; 127                   ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic element usage by number of LUT inputs ;                       ;                                ;
-;     -- 4 input functions                    ; 236                   ; 0                              ;
-;     -- 3 input functions                    ; 220                   ; 0                              ;
-;     -- <=2 input functions                  ; 207                   ; 0                              ;
-;     -- Register only                        ; 5                     ; 0                              ;
+;     -- 4 input functions                    ; 245                   ; 0                              ;
+;     -- 3 input functions                    ; 300                   ; 0                              ;
+;     -- <=2 input functions                  ; 270                   ; 0                              ;
+;     -- Register only                        ; 4                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic elements by mode                      ;                       ;                                ;
-;     -- normal mode                          ; 367                   ; 0                              ;
-;     -- arithmetic mode                      ; 296                   ; 0                              ;
+;     -- normal mode                          ; 392                   ; 0                              ;
+;     -- arithmetic mode                      ; 423                   ; 0                              ;
 ;                                             ;                       ;                                ;
-; Total registers                             ; 129                   ; 0                              ;
-;     -- Dedicated logic registers            ; 129 / 49760 ( < 1 % ) ; 0 / 49760 ( 0 % )              ;
+; Total registers                             ; 131                   ; 0                              ;
+;     -- Dedicated logic registers            ; 131 / 49760 ( < 1 % ) ; 0 / 49760 ( 0 % )              ;
 ;     -- I/O registers                        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
-; Total LABs:  partially or completely used   ; 57 / 3110 ( 2 % )     ; 0 / 3110 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 69 / 3110 ( 2 % )     ; 0 / 3110 ( 0 % )               ;
 ;                                             ;                       ;                                ;
 ; Virtual pins                                ; 0                     ; 0                              ;
-; I/O pins                                    ; 20                    ; 0                              ;
+; I/O pins                                    ; 22                    ; 0                              ;
 ; Embedded Multiplier 9-bit elements          ; 12 / 288 ( 4 % )      ; 0 / 288 ( 0 % )                ;
 ; Total memory bits                           ; 921600                ; 0                              ;
 ; Total RAM block bits                        ; 1041408               ; 0                              ;
 ; M9K                                         ; 113 / 182 ( 62 % )    ; 0 / 182 ( 0 % )                ;
-; Clock control block                         ; 3 / 24 ( 12 % )       ; 0 / 24 ( 0 % )                 ;
+; Clock control block                         ; 4 / 24 ( 16 % )       ; 0 / 24 ( 0 % )                 ;
 ; User Flash Memory                           ; 1 / 1 ( 100 % )       ; 0 / 1 ( 0 % )                  ;
 ; Analog-to-Digital Converter                 ; 2 / 2 ( 100 % )       ; 0 / 2 ( 0 % )                  ;
 ;                                             ;                       ;                                ;
@@ -492,15 +502,15 @@ The pin-out file can be found in D:/Téléchargements/Pong_restored/output_files/P
 ;     -- Registered Output Connections        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Internal Connections                        ;                       ;                                ;
-;     -- Total Connections                    ; 6373                  ; 8                              ;
-;     -- Registered Connections               ; 668                   ; 0                              ;
+;     -- Total Connections                    ; 6805                  ; 8                              ;
+;     -- Registered Connections               ; 873                   ; 0                              ;
 ;                                             ;                       ;                                ;
 ; External Connections                        ;                       ;                                ;
 ;     -- Top                                  ; 0                     ; 0                              ;
 ;     -- hard_block:auto_generated_inst       ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Partition Interface                         ;                       ;                                ;
-;     -- Input Ports                          ; 6                     ; 0                              ;
+;     -- Input Ports                          ; 8                     ; 0                              ;
 ;     -- Output Ports                         ; 14                    ; 0                              ;
 ;     -- Bidir Ports                          ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
@@ -525,12 +535,14 @@ The pin-out file can be found in D:/Téléchargements/Pong_restored/output_files/P
 +----------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 ; Name           ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +----------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
-; Down_btn_Left  ; F15   ; 7        ; 69           ; 54           ; 0            ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
-; Down_btn_Right ; B8    ; 7        ; 46           ; 54           ; 28           ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
-; Up_btn_Left    ; B14   ; 7        ; 56           ; 54           ; 0            ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
-; Up_btn_Right   ; A7    ; 7        ; 49           ; 54           ; 28           ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
-; clk            ; P11   ; 3        ; 34           ; 0            ; 28           ; 59                    ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; Down_btn_Left  ; AA6   ; 3        ; 29           ; 0            ; 21           ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; Down_btn_Right ; Y5    ; 3        ; 18           ; 0            ; 0            ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; Up_btn_Left    ; AA7   ; 3        ; 29           ; 0            ; 14           ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; Up_btn_Right   ; Y6    ; 3        ; 20           ; 0            ; 28           ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; clk            ; P11   ; 3        ; 34           ; 0            ; 28           ; 65                    ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; play           ; D12   ; 7        ; 51           ; 54           ; 0            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
 ; rst            ; C10   ; 7        ; 51           ; 54           ; 28           ; 190                   ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; rst_game       ; C11   ; 7        ; 51           ; 54           ; 21           ; 6                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
 +----------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
 
@@ -580,11 +592,11 @@ The pin-out file can be found in D:/Téléchargements/Pong_restored/output_files/P
 ; 1A       ; 0 / 16 ( 0 % )   ; 2.5V          ; --           ;
 ; 1B       ; 4 / 24 ( 17 % )  ; 2.5V          ; --           ;
 ; 2        ; 11 / 36 ( 31 % ) ; 2.5V          ; --           ;
-; 3        ; 4 / 48 ( 8 % )   ; 2.5V          ; --           ;
+; 3        ; 8 / 48 ( 17 % )  ; 2.5V          ; --           ;
 ; 4        ; 0 / 48 ( 0 % )   ; 2.5V          ; --           ;
 ; 5        ; 0 / 40 ( 0 % )   ; 2.5V          ; --           ;
 ; 6        ; 0 / 60 ( 0 % )   ; 2.5V          ; --           ;
-; 7        ; 5 / 52 ( 10 % )  ; 2.5V          ; --           ;
+; 7        ; 3 / 52 ( 6 % )   ; 2.5V          ; --           ;
 ; 8        ; 4 / 36 ( 11 % )  ; 2.5V          ; --           ;
 +----------+------------------+---------------+--------------+
 
@@ -600,7 +612,7 @@ The pin-out file can be found in D:/Téléchargements/Pong_restored/output_files/P
 ; A4       ; 475        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; A5       ; 473        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; A6       ; 471        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; A7       ; 445        ; 7        ; Up_btn_Right                                   ; input  ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
+; A7       ; 445        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; A8       ; 447        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; A9       ; 449        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; A10      ; 439        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
@@ -621,8 +633,8 @@ The pin-out file can be found in D:/Téléchargements/Pong_restored/output_files/P
 ; AA3      ; 153        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; --       ; --           ;
 ; AA4      ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; AA5      ; 157        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; AA6      ; 156        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; AA7      ; 158        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
+; AA6      ; 156        ; 3        ; Down_btn_Left                                  ; input  ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
+; AA7      ; 158        ; 3        ; Up_btn_Left                                    ; input  ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AA8      ; 165        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; AA9      ; 169        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; AA10     ; 170        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
@@ -667,13 +679,13 @@ The pin-out file can be found in D:/Téléchargements/Pong_restored/output_files/P
 ; B5       ; 485        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; B6       ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; B7       ; 469        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; B8       ; 451        ; 7        ; Down_btn_Right                                 ; input  ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
+; B8       ; 451        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; B9       ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; B10      ; 448        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; B11      ; 443        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; B12      ; 441        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; B13      ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
-; B14      ; 427        ; 7        ; Up_btn_Left                                    ; input  ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
+; B14      ; 427        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; B15      ; 423        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; --       ; --           ;
 ; B16      ; 417        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; B17      ; 402        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
@@ -692,7 +704,7 @@ The pin-out file can be found in D:/Téléchargements/Pong_restored/output_files/P
 ; C8       ; 465        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; C9       ; 450        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; C10      ; 442        ; 7        ; rst                                            ; input  ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
-; C11      ; 440        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
+; C11      ; 440        ; 7        ; rst_game                                       ; input  ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; C12      ; 436        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; C13      ; 426        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; C14      ; 424        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
@@ -715,7 +727,7 @@ The pin-out file can be found in D:/Téléchargements/Pong_restored/output_files/P
 ; D9       ; 474        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; D10      ; 476        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; D11      ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
-; D12      ; 438        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
+; D12      ; 438        ; 7        ; play                                           ; input  ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; D13      ; 431        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; D14      ; 428        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; D15      ; 404        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
@@ -762,7 +774,7 @@ The pin-out file can be found in D:/Téléchargements/Pong_restored/output_files/P
 ; F12      ;            ; 7        ; VCCIO7                                         ; power  ;                       ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; F13      ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; F14      ;            ; 7        ; VCCIO7                                         ; power  ;                       ; 2.5V    ; --         ;                 ; --       ; --           ;
-; F15      ; 398        ; 7        ; Down_btn_Left                                  ; input  ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
+; F15      ; 398        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; F16      ; 396        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; F17      ; 364        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; F18      ; 354        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -1060,8 +1072,8 @@ The pin-out file can be found in D:/Téléchargements/Pong_restored/output_files/P
 ; Y2       ; 131        ; 3        ; red[2]                                         ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; Y3       ; 149        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; Y4       ; 151        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; Y5       ; 137        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; Y6       ; 139        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
+; Y5       ; 137        ; 3        ; Down_btn_Right                                 ; input  ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
+; Y6       ; 139        ; 3        ; Up_btn_Right                                   ; input  ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; Y7       ; 141        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; Y8       ; 143        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; Y9       ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
@@ -1101,8 +1113,10 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; blue[1]        ; Incomplete set of assignments ;
 ; blue[2]        ; Incomplete set of assignments ;
 ; blue[3]        ; Incomplete set of assignments ;
+; play           ; Incomplete set of assignments ;
 ; rst            ; Incomplete set of assignments ;
 ; clk            ; Incomplete set of assignments ;
+; rst_game       ; Incomplete set of assignments ;
 ; Up_btn_Left    ; Incomplete set of assignments ;
 ; Down_btn_Left  ; Incomplete set of assignments ;
 ; Up_btn_Right   ; Incomplete set of assignments ;
@@ -1115,8 +1129,8 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +-------------------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+----------------------------------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; ADC blocks ; Full Hierarchy Name                                                                                ; Entity Name     ; Library Name ;
 +-------------------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+----------------------------------------------------------------------------------------------------+-----------------+--------------+
-; |Pong                                     ; 668 (3)     ; 129 (1)                   ; 0 (0)         ; 921600      ; 113  ; 1          ; 12           ; 0       ; 6         ; 20   ; 0            ; 539 (2)      ; 5 (1)             ; 124 (0)          ; 0          ; |Pong                                                                                              ; Pong            ; work         ;
-;    |Display:screendata|                   ; 449 (313)   ; 26 (20)                   ; 0 (0)         ; 921600      ; 113  ; 0          ; 12           ; 0       ; 6         ; 0    ; 0            ; 410 (274)    ; 2 (2)             ; 37 (37)          ; 0          ; |Pong|Display:screendata                                                                           ; Display         ; work         ;
+; |Pong                                     ; 819 (3)     ; 131 (1)                   ; 0 (0)         ; 921600      ; 113  ; 1          ; 12           ; 0       ; 6         ; 22   ; 0            ; 688 (2)      ; 4 (1)             ; 127 (0)          ; 0          ; |Pong                                                                                              ; Pong            ; work         ;
+;    |Display:screendata|                   ; 451 (315)   ; 26 (20)                   ; 0 (0)         ; 921600      ; 113  ; 0          ; 12           ; 0       ; 6         ; 0    ; 0            ; 420 (284)    ; 1 (1)             ; 30 (30)          ; 0          ; |Pong|Display:screendata                                                                           ; Display         ; work         ;
 ;       |altsyncram:matrix_rtl_0|           ; 142 (0)     ; 6 (0)                     ; 0 (0)         ; 921600      ; 113  ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 136 (0)      ; 0 (0)             ; 6 (0)            ; 0          ; |Pong|Display:screendata|altsyncram:matrix_rtl_0                                                   ; altsyncram      ; work         ;
 ;          |altsyncram_egd1:auto_generated| ; 142 (6)     ; 6 (6)                     ; 0 (0)         ; 921600      ; 113  ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 136 (0)      ; 0 (0)             ; 6 (6)            ; 0          ; |Pong|Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated                    ; altsyncram_egd1 ; work         ;
 ;             |decode_79a:decode2|          ; 43 (43)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 43 (43)      ; 0 (0)             ; 0 (0)            ; 0          ; |Pong|Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2 ; decode_79a      ; work         ;
@@ -1133,9 +1147,9 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;          |mult_ens:auto_generated|        ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 2            ; 0       ; 1         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |Pong|Display:screendata|lpm_mult:Mult4|mult_ens:auto_generated                                    ; mult_ens        ; work         ;
 ;       |lpm_mult:Mult5|                    ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 2            ; 0       ; 1         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |Pong|Display:screendata|lpm_mult:Mult5                                                            ; lpm_mult        ; work         ;
 ;          |mult_ens:auto_generated|        ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 2            ; 0       ; 1         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |Pong|Display:screendata|lpm_mult:Mult5|mult_ens:auto_generated                                    ; mult_ens        ; work         ;
-;    |divider:clk1|                         ; 32 (32)     ; 18 (18)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (14)      ; 1 (1)             ; 17 (17)          ; 0          ; |Pong|divider:clk1                                                                                 ; divider         ; work         ;
-;    |game:pongmove|                        ; 132 (132)   ; 40 (40)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 92 (92)      ; 1 (1)             ; 39 (39)          ; 0          ; |Pong|game:pongmove                                                                                ; game            ; work         ;
-;    |vga_driver:driver|                    ; 65 (65)     ; 44 (44)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 21 (21)      ; 0 (0)             ; 44 (44)          ; 0          ; |Pong|vga_driver:driver                                                                            ; vga_driver      ; work         ;
+;    |divider:clk1|                         ; 31 (31)     ; 18 (18)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 13 (13)      ; 1 (1)             ; 17 (17)          ; 0          ; |Pong|divider:clk1                                                                                 ; divider         ; work         ;
+;    |game:pongmove|                        ; 273 (273)   ; 42 (42)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 231 (231)    ; 1 (1)             ; 41 (41)          ; 0          ; |Pong|game:pongmove                                                                                ; game            ; work         ;
+;    |vga_driver:driver|                    ; 66 (66)     ; 44 (44)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 22 (22)      ; 0 (0)             ; 44 (44)          ; 0          ; |Pong|vga_driver:driver                                                                            ; vga_driver      ; work         ;
 +-------------------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+----------------------------------------------------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1159,12 +1173,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; blue[1]        ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; blue[2]        ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; blue[3]        ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; play           ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 ; rst            ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
-; clk            ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-; Up_btn_Left    ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; clk            ; Input    ; (0) 0 ps      ; (0) 0 ps      ; --                    ; --  ; --   ;
+; rst_game       ; Input    ; (0) 0 ps      ; (0) 0 ps      ; --                    ; --  ; --   ;
+; Up_btn_Left    ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
 ; Down_btn_Left  ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
 ; Up_btn_Right   ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
-; Down_btn_Right ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; Down_btn_Right ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
 +----------------+----------+---------------+---------------+-----------------------+-----+------+
 
 
@@ -1173,6 +1189,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------------------------------------------------------------------------+-------------------+---------+
 ; Source Pin / Fanout                                                                                                   ; Pad To Core Index ; Setting ;
 +-----------------------------------------------------------------------------------------------------------------------+-------------------+---------+
+; play                                                                                                                  ;                   ;         ;
 ; rst                                                                                                                   ;                   ;         ;
 ;      - vga_driver:driver|blue[3]                                                                                      ; 0                 ; 6       ;
 ;      - vga_driver:driver|green[3]                                                                                     ; 0                 ; 6       ;
@@ -1331,14 +1348,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - Display:screendata|x[8]~_Duplicate_2                                                                           ; 0                 ; 6       ;
 ;      - Display:screendata|x[7]~_Duplicate_2                                                                           ; 0                 ; 6       ;
 ;      - Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1300w[3]~0 ; 0                 ; 6       ;
-;      - Display:screendata|x[5]~_Duplicate_2                                                                           ; 0                 ; 6       ;
-;      - Display:screendata|x[4]~_Duplicate_2                                                                           ; 0                 ; 6       ;
 ;      - Display:screendata|x[0]~_Duplicate_2                                                                           ; 0                 ; 6       ;
-;      - Display:screendata|x[1]~_Duplicate_2                                                                           ; 0                 ; 6       ;
-;      - Display:screendata|x[2]~_Duplicate_2                                                                           ; 0                 ; 6       ;
-;      - Display:screendata|x[3]~_Duplicate_2                                                                           ; 0                 ; 6       ;
-;      - Display:screendata|x[6]~_Duplicate_2                                                                           ; 0                 ; 6       ;
 ;      - Display:screendata|y[9]~_Duplicate_2                                                                           ; 0                 ; 6       ;
+;      - Display:screendata|x[3]~_Duplicate_2                                                                           ; 0                 ; 6       ;
+;      - Display:screendata|x[2]~_Duplicate_2                                                                           ; 0                 ; 6       ;
+;      - Display:screendata|x[1]~_Duplicate_2                                                                           ; 0                 ; 6       ;
+;      - Display:screendata|x[4]~_Duplicate_2                                                                           ; 0                 ; 6       ;
+;      - Display:screendata|x[5]~_Duplicate_2                                                                           ; 0                 ; 6       ;
+;      - Display:screendata|x[6]~_Duplicate_2                                                                           ; 0                 ; 6       ;
 ;      - Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1289w[3]~0 ; 0                 ; 6       ;
 ;      - Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1340w[3]~0 ; 0                 ; 6       ;
 ;      - Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1143w[3]~0 ; 0                 ; 6       ;
@@ -1365,36 +1382,66 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - Display:screendata|lpm_mult:Mult1|mult_ens:auto_generated|mac_mult1                                            ; 0                 ; 6       ;
 ;      - Display:screendata|lpm_mult:Mult3|mult_ens:auto_generated|mac_mult1                                            ; 0                 ; 6       ;
 ; clk                                                                                                                   ;                   ;         ;
+;      - game:pongmove|yball_next[0]                                                                                    ; 1                 ; 0       ;
+;      - game:pongmove|xball_next[0]                                                                                    ; 0                 ; 0       ;
+;      - game:pongmove|xball_next[9]                                                                                    ; 0                 ; 0       ;
+;      - game:pongmove|xball_next[8]                                                                                    ; 0                 ; 0       ;
+;      - game:pongmove|xball_next[7]                                                                                    ; 0                 ; 0       ;
+;      - game:pongmove|xball_next[6]                                                                                    ; 0                 ; 0       ;
+;      - game:pongmove|xball_next[5]                                                                                    ; 0                 ; 0       ;
+;      - game:pongmove|xball_next[4]                                                                                    ; 0                 ; 0       ;
+;      - game:pongmove|xball_next[3]                                                                                    ; 0                 ; 0       ;
+;      - game:pongmove|xball_next[2]                                                                                    ; 0                 ; 0       ;
+;      - game:pongmove|xball_next[1]                                                                                    ; 0                 ; 0       ;
+;      - game:pongmove|yball_next[9]                                                                                    ; 1                 ; 0       ;
+;      - game:pongmove|yball_next[8]                                                                                    ; 1                 ; 0       ;
+;      - game:pongmove|yball_next[7]                                                                                    ; 1                 ; 0       ;
+;      - game:pongmove|yball_next[6]                                                                                    ; 1                 ; 0       ;
+;      - game:pongmove|yball_next[5]                                                                                    ; 1                 ; 0       ;
+;      - game:pongmove|yball_next[4]                                                                                    ; 1                 ; 0       ;
+;      - game:pongmove|yball_next[3]                                                                                    ; 1                 ; 0       ;
+;      - game:pongmove|yball_next[2]                                                                                    ; 1                 ; 0       ;
+;      - game:pongmove|yball_next[1]                                                                                    ; 1                 ; 0       ;
+;      - game:pongmove|yballcenter[9]~0                                                                                 ; 1                 ; 0       ;
+;      - game:pongmove|xball_next[9]~10                                                                                 ; 0                 ; 0       ;
+;      - game:pongmove|y2[9]~2                                                                                          ; 0                 ; 0       ;
+; rst_game                                                                                                              ;                   ;         ;
+;      - game:pongmove|yballcenter[9]~0                                                                                 ; 0                 ; 0       ;
+;      - game:pongmove|xball_next[9]~10                                                                                 ; 1                 ; 0       ;
+;      - game:pongmove|yball_speed[0]~0                                                                                 ; 1                 ; 0       ;
+;      - game:pongmove|yball_speed[0]~3                                                                                 ; 1                 ; 0       ;
+;      - game:pongmove|yball_speed[1]~5                                                                                 ; 0                 ; 0       ;
+;      - game:pongmove|xball_dir[0]~6                                                                                   ; 1                 ; 0       ;
 ; Up_btn_Left                                                                                                           ;                   ;         ;
-;      - game:pongmove|Add6~18                                                                                          ; 0                 ; 6       ;
-;      - game:pongmove|Add6~16                                                                                          ; 0                 ; 6       ;
-;      - game:pongmove|Add6~14                                                                                          ; 0                 ; 6       ;
-;      - game:pongmove|Add6~12                                                                                          ; 0                 ; 6       ;
-;      - game:pongmove|Add6~10                                                                                          ; 0                 ; 6       ;
-;      - game:pongmove|Add6~8                                                                                           ; 0                 ; 6       ;
-;      - game:pongmove|Add6~6                                                                                           ; 0                 ; 6       ;
-;      - game:pongmove|Add6~4                                                                                           ; 0                 ; 6       ;
-;      - game:pongmove|Add6~2                                                                                           ; 0                 ; 6       ;
-;      - game:pongmove|y1[9]~1                                                                                          ; 0                 ; 6       ;
-;      - game:pongmove|y1[8]~4                                                                                          ; 0                 ; 6       ;
+;      - game:pongmove|Add12~18                                                                                         ; 1                 ; 6       ;
+;      - game:pongmove|Add12~16                                                                                         ; 1                 ; 6       ;
+;      - game:pongmove|Add12~14                                                                                         ; 1                 ; 6       ;
+;      - game:pongmove|Add12~12                                                                                         ; 1                 ; 6       ;
+;      - game:pongmove|Add12~10                                                                                         ; 1                 ; 6       ;
+;      - game:pongmove|Add12~8                                                                                          ; 1                 ; 6       ;
+;      - game:pongmove|Add12~6                                                                                          ; 1                 ; 6       ;
+;      - game:pongmove|Add12~4                                                                                          ; 1                 ; 6       ;
+;      - game:pongmove|Add12~2                                                                                          ; 1                 ; 6       ;
+;      - game:pongmove|y1[9]~1                                                                                          ; 1                 ; 6       ;
+;      - game:pongmove|y1[8]~4                                                                                          ; 1                 ; 6       ;
 ; Down_btn_Left                                                                                                         ;                   ;         ;
 ;      - game:pongmove|y1[9]~1                                                                                          ; 1                 ; 6       ;
 ;      - game:pongmove|y1[8]~4                                                                                          ; 1                 ; 6       ;
 ; Up_btn_Right                                                                                                          ;                   ;         ;
-;      - game:pongmove|Add8~18                                                                                          ; 0                 ; 6       ;
-;      - game:pongmove|Add8~16                                                                                          ; 0                 ; 6       ;
-;      - game:pongmove|Add8~14                                                                                          ; 0                 ; 6       ;
-;      - game:pongmove|Add8~12                                                                                          ; 0                 ; 6       ;
-;      - game:pongmove|Add8~10                                                                                          ; 0                 ; 6       ;
-;      - game:pongmove|Add8~8                                                                                           ; 0                 ; 6       ;
-;      - game:pongmove|Add8~6                                                                                           ; 0                 ; 6       ;
-;      - game:pongmove|Add8~4                                                                                           ; 0                 ; 6       ;
-;      - game:pongmove|Add8~2                                                                                           ; 0                 ; 6       ;
+;      - game:pongmove|Add14~18                                                                                         ; 0                 ; 6       ;
+;      - game:pongmove|Add14~16                                                                                         ; 0                 ; 6       ;
+;      - game:pongmove|Add14~14                                                                                         ; 0                 ; 6       ;
+;      - game:pongmove|Add14~12                                                                                         ; 0                 ; 6       ;
+;      - game:pongmove|Add14~10                                                                                         ; 0                 ; 6       ;
+;      - game:pongmove|Add14~8                                                                                          ; 0                 ; 6       ;
+;      - game:pongmove|Add14~6                                                                                          ; 0                 ; 6       ;
+;      - game:pongmove|Add14~4                                                                                          ; 0                 ; 6       ;
+;      - game:pongmove|Add14~2                                                                                          ; 0                 ; 6       ;
 ;      - game:pongmove|y2[9]~1                                                                                          ; 0                 ; 6       ;
 ;      - game:pongmove|y2[8]~4                                                                                          ; 0                 ; 6       ;
 ; Down_btn_Right                                                                                                        ;                   ;         ;
-;      - game:pongmove|y2[9]~1                                                                                          ; 0                 ; 6       ;
-;      - game:pongmove|y2[8]~4                                                                                          ; 0                 ; 6       ;
+;      - game:pongmove|y2[9]~1                                                                                          ; 1                 ; 6       ;
+;      - game:pongmove|y2[8]~4                                                                                          ; 1                 ; 6       ;
 +-----------------------------------------------------------------------------------------------------------------------+-------------------+---------+
 
 
@@ -1403,67 +1450,72 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------------------------------------------------+--------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
 ; Name                                                                                                           ; Location           ; Fan-Out ; Usage                      ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +----------------------------------------------------------------------------------------------------------------+--------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
-; Display:screendata|Equal0~2                                                                                    ; LCCOMB_X49_Y21_N0  ; 14      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1096w[3]   ; LCCOMB_X54_Y22_N18 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1113w[3]~0 ; LCCOMB_X54_Y19_N14 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1123w[3]~0 ; LCCOMB_X54_Y19_N22 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1133w[3]~0 ; LCCOMB_X54_Y19_N12 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1143w[3]~1 ; LCCOMB_X54_Y19_N24 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1153w[3]~0 ; LCCOMB_X52_Y22_N28 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1163w[3]~0 ; LCCOMB_X52_Y22_N16 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1173w[3]~0 ; LCCOMB_X52_Y22_N14 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1196w[3]~0 ; LCCOMB_X54_Y19_N10 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1207w[3]~0 ; LCCOMB_X54_Y22_N6  ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1217w[3]~0 ; LCCOMB_X54_Y19_N16 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1227w[3]~0 ; LCCOMB_X54_Y22_N8  ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1237w[3]~0 ; LCCOMB_X52_Y22_N18 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1247w[3]~0 ; LCCOMB_X52_Y22_N8  ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1257w[3]~0 ; LCCOMB_X52_Y22_N6  ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1267w[3]~0 ; LCCOMB_X52_Y22_N0  ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1289w[3]~1 ; LCCOMB_X54_Y22_N0  ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1300w[3]~1 ; LCCOMB_X54_Y22_N26 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1310w[3]~0 ; LCCOMB_X54_Y22_N10 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1320w[3]~0 ; LCCOMB_X54_Y19_N30 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1330w[3]~0 ; LCCOMB_X54_Y19_N4  ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1340w[3]~1 ; LCCOMB_X52_Y22_N4  ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1350w[3]~0 ; LCCOMB_X50_Y19_N28 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1360w[3]~0 ; LCCOMB_X52_Y22_N26 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1382w[3]~0 ; LCCOMB_X54_Y19_N0  ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1393w[3]~0 ; LCCOMB_X54_Y22_N2  ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1403w[3]~0 ; LCCOMB_X54_Y19_N28 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1413w[3]~0 ; LCCOMB_X54_Y19_N18 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1423w[3]~0 ; LCCOMB_X52_Y22_N22 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1433w[3]~0 ; LCCOMB_X52_Y22_N30 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1443w[3]~0 ; LCCOMB_X52_Y22_N10 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1453w[3]~0 ; LCCOMB_X52_Y22_N24 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1475w[3]~0 ; LCCOMB_X54_Y22_N24 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1486w[3]~0 ; LCCOMB_X54_Y22_N12 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1496w[3]~0 ; LCCOMB_X54_Y22_N22 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1506w[3]~1 ; LCCOMB_X54_Y22_N14 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1516w[3]~0 ; LCCOMB_X54_Y22_N20 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1526w[3]~0 ; LCCOMB_X54_Y22_N30 ; 2       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; Display:screendata|Equal0~2                                                                                    ; LCCOMB_X46_Y20_N26 ; 14      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1096w[3]   ; LCCOMB_X52_Y20_N2  ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1113w[3]~0 ; LCCOMB_X51_Y20_N18 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1123w[3]~0 ; LCCOMB_X51_Y20_N28 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1133w[3]~0 ; LCCOMB_X54_Y20_N4  ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1143w[3]~1 ; LCCOMB_X52_Y20_N16 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1153w[3]~0 ; LCCOMB_X52_Y20_N10 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1163w[3]~0 ; LCCOMB_X54_Y20_N14 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1173w[3]~0 ; LCCOMB_X52_Y20_N30 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1196w[3]~0 ; LCCOMB_X52_Y20_N24 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1207w[3]~0 ; LCCOMB_X51_Y20_N16 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1217w[3]~0 ; LCCOMB_X51_Y20_N12 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1227w[3]~0 ; LCCOMB_X51_Y20_N22 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1237w[3]~0 ; LCCOMB_X51_Y20_N30 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1247w[3]~0 ; LCCOMB_X54_Y20_N22 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1257w[3]~0 ; LCCOMB_X52_Y20_N12 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1267w[3]~0 ; LCCOMB_X54_Y20_N16 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1289w[3]~1 ; LCCOMB_X52_Y20_N20 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1300w[3]~1 ; LCCOMB_X54_Y20_N28 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1310w[3]~0 ; LCCOMB_X52_Y20_N26 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1320w[3]~0 ; LCCOMB_X54_Y20_N26 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1330w[3]~0 ; LCCOMB_X52_Y20_N4  ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1340w[3]~1 ; LCCOMB_X54_Y20_N20 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1350w[3]~0 ; LCCOMB_X52_Y20_N14 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1360w[3]~0 ; LCCOMB_X54_Y20_N2  ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1382w[3]~0 ; LCCOMB_X51_Y20_N20 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1393w[3]~0 ; LCCOMB_X54_Y20_N8  ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1403w[3]~0 ; LCCOMB_X52_Y20_N6  ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1413w[3]~0 ; LCCOMB_X54_Y20_N30 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1423w[3]~0 ; LCCOMB_X54_Y20_N6  ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1433w[3]~0 ; LCCOMB_X54_Y20_N0  ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1443w[3]~0 ; LCCOMB_X54_Y20_N18 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1453w[3]~0 ; LCCOMB_X54_Y20_N24 ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1475w[3]~0 ; LCCOMB_X50_Y20_N0  ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1486w[3]~0 ; LCCOMB_X51_Y20_N6  ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1496w[3]~0 ; LCCOMB_X51_Y20_N8  ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1506w[3]~1 ; LCCOMB_X51_Y20_N4  ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1516w[3]~0 ; LCCOMB_X50_Y20_N2  ; 3       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|decode_79a:decode2|w_anode1526w[3]~0 ; LCCOMB_X51_Y20_N14 ; 2       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
 ; clk                                                                                                            ; PIN_P11            ; 39      ; Clock, Latch enable        ; yes    ; Global Clock         ; GCLK19           ; --                        ;
-; clk                                                                                                            ; PIN_P11            ; 21      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; clk25                                                                                                          ; FF_X45_Y53_N11     ; 185     ; Clock                      ; yes    ; Global Clock         ; GCLK14           ; --                        ;
-; divider:clk1|clk_out~reg0                                                                                      ; FF_X45_Y4_N7       ; 44      ; Clock                      ; yes    ; Global Clock         ; GCLK18           ; --                        ;
-; game:pongmove|y1[8]~4                                                                                          ; LCCOMB_X58_Y24_N24 ; 9       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; game:pongmove|y2[8]~4                                                                                          ; LCCOMB_X45_Y25_N4  ; 9       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; game:pongmove|yball_next[1]~0                                                                                  ; LCCOMB_X47_Y19_N28 ; 9       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; clk                                                                                                            ; PIN_P11            ; 27      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; clk25                                                                                                          ; FF_X45_Y53_N11     ; 185     ; Clock                      ; yes    ; Global Clock         ; GCLK13           ; --                        ;
+; divider:clk1|clk_out~reg0                                                                                      ; FF_X40_Y18_N9      ; 42      ; Clock                      ; no     ; --                   ; --               ; --                        ;
+; divider:clk1|clk_out~reg0                                                                                      ; FF_X40_Y18_N9      ; 6       ; Clock                      ; yes    ; Global Clock         ; GCLK16           ; --                        ;
+; game:pongmove|xball_dir[0]~6                                                                                   ; LCCOMB_X37_Y19_N12 ; 1       ; Latch enable               ; no     ; --                   ; --               ; --                        ;
+; game:pongmove|xball_next[9]~10                                                                                 ; LCCOMB_X38_Y19_N4  ; 20      ; Async. clear               ; no     ; --                   ; --               ; --                        ;
+; game:pongmove|y1[8]~4                                                                                          ; LCCOMB_X42_Y18_N6  ; 9       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; game:pongmove|y2[8]~4                                                                                          ; LCCOMB_X42_Y16_N26 ; 9       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; game:pongmove|yball_speed[0]~3                                                                                 ; LCCOMB_X37_Y19_N14 ; 2       ; Latch enable               ; yes    ; Global Clock         ; GCLK18           ; --                        ;
+; game:pongmove|yballcenter[9]~0                                                                                 ; LCCOMB_X47_Y22_N6  ; 6       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
 ; rst                                                                                                            ; PIN_C10            ; 190     ; Async. clear, Clock enable ; no     ; --                   ; --               ; --                        ;
-; vga_driver:driver|Equal0~2                                                                                     ; LCCOMB_X43_Y20_N30 ; 14      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; vga_driver:driver|xpos[0]~0                                                                                    ; LCCOMB_X44_Y20_N6  ; 19      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; vga_driver:driver|Equal0~2                                                                                     ; LCCOMB_X45_Y25_N2  ; 14      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; vga_driver:driver|xpos[0]~0                                                                                    ; LCCOMB_X44_Y26_N4  ; 19      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
 +----------------------------------------------------------------------------------------------------------------+--------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Global & Other Fast Signals                                                                                                                                       ;
-+---------------------------+----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; Name                      ; Location       ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+---------------------------+----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; clk                       ; PIN_P11        ; 39      ; 0                                    ; Global Clock         ; GCLK19           ; --                        ;
-; clk25                     ; FF_X45_Y53_N11 ; 185     ; 0                                    ; Global Clock         ; GCLK14           ; --                        ;
-; divider:clk1|clk_out~reg0 ; FF_X45_Y4_N7   ; 44      ; 0                                    ; Global Clock         ; GCLK18           ; --                        ;
-+---------------------------+----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Global & Other Fast Signals                                                                                                                                                ;
++--------------------------------+--------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; Name                           ; Location           ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++--------------------------------+--------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; clk                            ; PIN_P11            ; 39      ; 0                                    ; Global Clock         ; GCLK19           ; --                        ;
+; clk25                          ; FF_X45_Y53_N11     ; 185     ; 4                                    ; Global Clock         ; GCLK13           ; --                        ;
+; divider:clk1|clk_out~reg0      ; FF_X40_Y18_N9      ; 6       ; 0                                    ; Global Clock         ; GCLK16           ; --                        ;
+; game:pongmove|yball_speed[0]~3 ; LCCOMB_X37_Y19_N14 ; 2       ; 0                                    ; Global Clock         ; GCLK18           ; --                        ;
++--------------------------------+--------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1471,7 +1523,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
 ; Name                                                                                 ; Type ; Mode             ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size   ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M9Ks ; MIF  ; Location                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ; Mixed Width RDW Mode ; Port A RDW Mode        ; Port B RDW Mode        ; ECC Mode ; ECC Pipeline Registers ; Fits in MLABs ;
 +--------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
-; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; Single Clock ; 307200       ; 3            ; 307200       ; 3            ; yes                    ; no                      ; yes                    ; no                      ; 921600 ; 307200                      ; 3                           ; 307200                      ; 3                           ; 921600              ; 113  ; None ; M9K_X73_Y27_N0, M9K_X73_Y13_N0, M9K_X73_Y3_N0, M9K_X53_Y19_N0, M9K_X73_Y28_N0, M9K_X33_Y37_N0, M9K_X53_Y15_N0, M9K_X53_Y25_N0, M9K_X53_Y17_N0, M9K_X53_Y9_N0, M9K_X53_Y28_N0, M9K_X73_Y35_N0, M9K_X53_Y33_N0, M9K_X73_Y7_N0, M9K_X73_Y6_N0, M9K_X33_Y13_N0, M9K_X73_Y19_N0, M9K_X73_Y14_N0, M9K_X53_Y2_N0, M9K_X33_Y14_N0, M9K_X33_Y36_N0, M9K_X33_Y34_N0, M9K_X73_Y10_N0, M9K_X33_Y38_N0, M9K_X33_Y11_N0, M9K_X53_Y7_N0, M9K_X73_Y22_N0, M9K_X33_Y6_N0, M9K_X73_Y17_N0, M9K_X53_Y32_N0, M9K_X33_Y24_N0, M9K_X33_Y26_N0, M9K_X73_Y29_N0, M9K_X33_Y30_N0, M9K_X73_Y2_N0, M9K_X33_Y15_N0, M9K_X33_Y29_N0, M9K_X73_Y23_N0, M9K_X33_Y18_N0, M9K_X53_Y11_N0, M9K_X53_Y16_N0, M9K_X73_Y20_N0, M9K_X53_Y36_N0, M9K_X73_Y15_N0, M9K_X53_Y30_N0, M9K_X53_Y18_N0, M9K_X53_Y22_N0, M9K_X53_Y26_N0, M9K_X73_Y37_N0, M9K_X53_Y29_N0, M9K_X73_Y18_N0, M9K_X53_Y4_N0, M9K_X33_Y4_N0, M9K_X53_Y21_N0, M9K_X5_Y21_N0, M9K_X73_Y9_N0, M9K_X33_Y10_N0, M9K_X73_Y34_N0, M9K_X33_Y3_N0, M9K_X33_Y21_N0, M9K_X73_Y21_N0, M9K_X33_Y25_N0, M9K_X33_Y19_N0, M9K_X33_Y7_N0, M9K_X73_Y33_N0, M9K_X33_Y9_N0, M9K_X73_Y11_N0, M9K_X73_Y25_N0, M9K_X33_Y22_N0, M9K_X33_Y28_N0, M9K_X73_Y32_N0, M9K_X5_Y20_N0, M9K_X53_Y5_N0, M9K_X33_Y17_N0, M9K_X33_Y33_N0, M9K_X53_Y27_N0, M9K_X33_Y12_N0, M9K_X53_Y3_N0, M9K_X53_Y20_N0, M9K_X73_Y30_N0, M9K_X53_Y37_N0, M9K_X73_Y16_N0, M9K_X53_Y23_N0, M9K_X53_Y13_N0, M9K_X53_Y6_N0, M9K_X53_Y24_N0, M9K_X53_Y38_N0, M9K_X53_Y34_N0, M9K_X73_Y12_N0, M9K_X73_Y5_N0, M9K_X33_Y5_N0, M9K_X53_Y14_N0, M9K_X53_Y10_N0, M9K_X73_Y26_N0, M9K_X33_Y2_N0, M9K_X53_Y40_N0, M9K_X53_Y35_N0, M9K_X33_Y35_N0, M9K_X53_Y12_N0, M9K_X53_Y39_N0, M9K_X33_Y16_N0, M9K_X33_Y8_N0, M9K_X73_Y31_N0, M9K_X53_Y8_N0, M9K_X73_Y8_N0, M9K_X73_Y24_N0, M9K_X33_Y23_N0, M9K_X33_Y32_N0, M9K_X53_Y31_N0, M9K_X33_Y31_N0, M9K_X73_Y4_N0, M9K_X33_Y20_N0, M9K_X33_Y27_N0 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
+; Display:screendata|altsyncram:matrix_rtl_0|altsyncram_egd1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; Single Clock ; 307200       ; 3            ; 307200       ; 3            ; yes                    ; no                      ; yes                    ; no                      ; 921600 ; 307200                      ; 3                           ; 307200                      ; 3                           ; 921600              ; 113  ; None ; M9K_X73_Y6_N0, M9K_X5_Y17_N0, M9K_X73_Y12_N0, M9K_X53_Y16_N0, M9K_X53_Y12_N0, M9K_X73_Y20_N0, M9K_X5_Y20_N0, M9K_X33_Y27_N0, M9K_X53_Y28_N0, M9K_X73_Y32_N0, M9K_X73_Y31_N0, M9K_X53_Y36_N0, M9K_X73_Y26_N0, M9K_X73_Y27_N0, M9K_X73_Y7_N0, M9K_X33_Y31_N0, M9K_X33_Y36_N0, M9K_X73_Y34_N0, M9K_X73_Y28_N0, M9K_X53_Y31_N0, M9K_X5_Y22_N0, M9K_X5_Y21_N0, M9K_X53_Y33_N0, M9K_X33_Y33_N0, M9K_X33_Y7_N0, M9K_X33_Y26_N0, M9K_X33_Y38_N0, M9K_X53_Y26_N0, M9K_X53_Y38_N0, M9K_X53_Y9_N0, M9K_X33_Y34_N0, M9K_X73_Y36_N0, M9K_X53_Y6_N0, M9K_X33_Y23_N0, M9K_X33_Y20_N0, M9K_X5_Y19_N0, M9K_X73_Y9_N0, M9K_X73_Y18_N0, M9K_X33_Y19_N0, M9K_X53_Y19_N0, M9K_X53_Y18_N0, M9K_X53_Y21_N0, M9K_X53_Y25_N0, M9K_X73_Y19_N0, M9K_X53_Y27_N0, M9K_X53_Y29_N0, M9K_X53_Y22_N0, M9K_X73_Y22_N0, M9K_X73_Y35_N0, M9K_X53_Y7_N0, M9K_X33_Y28_N0, M9K_X73_Y23_N0, M9K_X73_Y24_N0, M9K_X53_Y20_N0, M9K_X33_Y22_N0, M9K_X73_Y29_N0, M9K_X33_Y29_N0, M9K_X53_Y40_N0, M9K_X53_Y32_N0, M9K_X33_Y21_N0, M9K_X53_Y37_N0, M9K_X33_Y35_N0, M9K_X33_Y8_N0, M9K_X33_Y24_N0, M9K_X53_Y35_N0, M9K_X73_Y25_N0, M9K_X33_Y37_N0, M9K_X53_Y8_N0, M9K_X33_Y32_N0, M9K_X53_Y34_N0, M9K_X33_Y5_N0, M9K_X53_Y24_N0, M9K_X53_Y23_N0, M9K_X53_Y5_N0, M9K_X53_Y10_N0, M9K_X53_Y1_N0, M9K_X33_Y9_N0, M9K_X53_Y3_N0, M9K_X53_Y15_N0, M9K_X53_Y13_N0, M9K_X73_Y30_N0, M9K_X73_Y13_N0, M9K_X33_Y13_N0, M9K_X53_Y17_N0, M9K_X73_Y16_N0, M9K_X53_Y2_N0, M9K_X53_Y11_N0, M9K_X73_Y4_N0, M9K_X33_Y25_N0, M9K_X73_Y33_N0, M9K_X73_Y21_N0, M9K_X73_Y17_N0, M9K_X33_Y17_N0, M9K_X33_Y18_N0, M9K_X73_Y11_N0, M9K_X53_Y4_N0, M9K_X33_Y4_N0, M9K_X33_Y14_N0, M9K_X53_Y39_N0, M9K_X33_Y30_N0, M9K_X33_Y10_N0, M9K_X33_Y15_N0, M9K_X33_Y11_N0, M9K_X73_Y15_N0, M9K_X33_Y16_N0, M9K_X53_Y14_N0, M9K_X53_Y30_N0, M9K_X73_Y14_N0, M9K_X33_Y3_N0, M9K_X33_Y6_N0, M9K_X33_Y12_N0, M9K_X33_Y1_N0, M9K_X73_Y10_N0 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
 +--------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
 Note: Fitter may spread logical memories into multiple blocks to improve timing. The actual required RAM blocks can be found in the Fitter Resource Usage section.
 
@@ -1498,18 +1550,18 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +------------------------------------------------------------------------+----------------------------+--------------------+---------------------+--------------------------------+-----------------------+-----------------------+-------------------+-----------------+
 ; Name                                                                   ; Mode                       ; Location           ; Sign Representation ; Has Input Shift Register Chain ; Data A Input Register ; Data B Input Register ; Pipeline Register ; Output Register ;
 +------------------------------------------------------------------------+----------------------------+--------------------+---------------------+--------------------------------+-----------------------+-----------------------+-------------------+-----------------+
-; Display:screendata|lpm_mult:Mult5|mult_ens:auto_generated|mac_out2     ; Simple Multiplier (18-bit) ; DSPOUT_X48_Y19_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    Display:screendata|lpm_mult:Mult5|mult_ens:auto_generated|mac_mult1 ;                            ; DSPMULT_X48_Y19_N0 ; Unsigned            ;                                ; yes                   ; yes                   ; no                ;                 ;
-; Display:screendata|lpm_mult:Mult4|mult_ens:auto_generated|mac_out2     ; Simple Multiplier (18-bit) ; DSPOUT_X48_Y20_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    Display:screendata|lpm_mult:Mult4|mult_ens:auto_generated|mac_mult1 ;                            ; DSPMULT_X48_Y20_N0 ; Unsigned            ;                                ; yes                   ; yes                   ; no                ;                 ;
-; Display:screendata|lpm_mult:Mult0|mult_gns:auto_generated|mac_out2     ; Simple Multiplier (18-bit) ; DSPOUT_X48_Y24_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    Display:screendata|lpm_mult:Mult0|mult_gns:auto_generated|mac_mult1 ;                            ; DSPMULT_X48_Y24_N0 ; Unsigned            ;                                ; no                    ; yes                   ; no                ;                 ;
-; Display:screendata|lpm_mult:Mult1|mult_ens:auto_generated|mac_out2     ; Simple Multiplier (18-bit) ; DSPOUT_X48_Y23_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    Display:screendata|lpm_mult:Mult1|mult_ens:auto_generated|mac_mult1 ;                            ; DSPMULT_X48_Y23_N0 ; Unsigned            ;                                ; yes                   ; yes                   ; no                ;                 ;
-; Display:screendata|lpm_mult:Mult2|mult_gns:auto_generated|mac_out2     ; Simple Multiplier (18-bit) ; DSPOUT_X48_Y21_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    Display:screendata|lpm_mult:Mult2|mult_gns:auto_generated|mac_mult1 ;                            ; DSPMULT_X48_Y21_N0 ; Unsigned            ;                                ; no                    ; yes                   ; no                ;                 ;
-; Display:screendata|lpm_mult:Mult3|mult_ens:auto_generated|mac_out2     ; Simple Multiplier (18-bit) ; DSPOUT_X48_Y25_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    Display:screendata|lpm_mult:Mult3|mult_ens:auto_generated|mac_mult1 ;                            ; DSPMULT_X48_Y25_N0 ; Unsigned            ;                                ; yes                   ; yes                   ; no                ;                 ;
+; Display:screendata|lpm_mult:Mult0|mult_gns:auto_generated|mac_out2     ; Simple Multiplier (18-bit) ; DSPOUT_X48_Y18_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    Display:screendata|lpm_mult:Mult0|mult_gns:auto_generated|mac_mult1 ;                            ; DSPMULT_X48_Y18_N0 ; Unsigned            ;                                ; yes                   ; no                    ; no                ;                 ;
+; Display:screendata|lpm_mult:Mult1|mult_ens:auto_generated|mac_out2     ; Simple Multiplier (18-bit) ; DSPOUT_X48_Y19_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    Display:screendata|lpm_mult:Mult1|mult_ens:auto_generated|mac_mult1 ;                            ; DSPMULT_X48_Y19_N0 ; Unsigned            ;                                ; yes                   ; yes                   ; no                ;                 ;
+; Display:screendata|lpm_mult:Mult2|mult_gns:auto_generated|mac_out2     ; Simple Multiplier (18-bit) ; DSPOUT_X48_Y20_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    Display:screendata|lpm_mult:Mult2|mult_gns:auto_generated|mac_mult1 ;                            ; DSPMULT_X48_Y20_N0 ; Unsigned            ;                                ; yes                   ; no                    ; no                ;                 ;
+; Display:screendata|lpm_mult:Mult3|mult_ens:auto_generated|mac_out2     ; Simple Multiplier (18-bit) ; DSPOUT_X48_Y23_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    Display:screendata|lpm_mult:Mult3|mult_ens:auto_generated|mac_mult1 ;                            ; DSPMULT_X48_Y23_N0 ; Unsigned            ;                                ; yes                   ; yes                   ; no                ;                 ;
+; Display:screendata|lpm_mult:Mult5|mult_ens:auto_generated|mac_out2     ; Simple Multiplier (18-bit) ; DSPOUT_X48_Y21_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    Display:screendata|lpm_mult:Mult5|mult_ens:auto_generated|mac_mult1 ;                            ; DSPMULT_X48_Y21_N0 ; Unsigned            ;                                ; yes                   ; yes                   ; no                ;                 ;
+; Display:screendata|lpm_mult:Mult4|mult_ens:auto_generated|mac_out2     ; Simple Multiplier (18-bit) ; DSPOUT_X48_Y22_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    Display:screendata|lpm_mult:Mult4|mult_ens:auto_generated|mac_mult1 ;                            ; DSPMULT_X48_Y22_N0 ; Unsigned            ;                                ; yes                   ; yes                   ; no                ;                 ;
 +------------------------------------------------------------------------+----------------------------+--------------------+---------------------+--------------------------------+-----------------------+-----------------------+-------------------+-----------------+
 
 
@@ -1518,50 +1570,50 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +-----------------------+-------------------------+
 ; Routing Resource Type ; Usage                   ;
 +-----------------------+-------------------------+
-; Block interconnects   ; 4,277 / 148,641 ( 3 % ) ;
-; C16 interconnects     ; 204 / 5,382 ( 4 % )     ;
-; C4 interconnects      ; 2,151 / 106,704 ( 2 % ) ;
-; Direct links          ; 226 / 148,641 ( < 1 % ) ;
-; Global clocks         ; 3 / 20 ( 15 % )         ;
-; Local interconnects   ; 327 / 49,760 ( < 1 % )  ;
+; Block interconnects   ; 4,527 / 148,641 ( 3 % ) ;
+; C16 interconnects     ; 268 / 5,382 ( 5 % )     ;
+; C4 interconnects      ; 2,587 / 106,704 ( 2 % ) ;
+; Direct links          ; 241 / 148,641 ( < 1 % ) ;
+; Global clocks         ; 4 / 20 ( 20 % )         ;
+; Local interconnects   ; 322 / 49,760 ( < 1 % )  ;
 ; NSLEEPs               ; 0 / 500 ( 0 % )         ;
-; R24 interconnects     ; 262 / 5,406 ( 5 % )     ;
-; R4 interconnects      ; 2,299 / 147,764 ( 2 % ) ;
+; R24 interconnects     ; 324 / 5,406 ( 6 % )     ;
+; R4 interconnects      ; 2,550 / 147,764 ( 2 % ) ;
 +-----------------------+-------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                         ;
 +---------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 11.72) ; Number of LABs  (Total = 57) ;
+; Number of Logic Elements  (Average = 11.87) ; Number of LABs  (Total = 69) ;
 +---------------------------------------------+------------------------------+
-; 1                                           ; 3                            ;
-; 2                                           ; 2                            ;
-; 3                                           ; 3                            ;
+; 1                                           ; 4                            ;
+; 2                                           ; 3                            ;
+; 3                                           ; 1                            ;
 ; 4                                           ; 1                            ;
-; 5                                           ; 0                            ;
+; 5                                           ; 1                            ;
 ; 6                                           ; 0                            ;
-; 7                                           ; 1                            ;
+; 7                                           ; 0                            ;
 ; 8                                           ; 1                            ;
-; 9                                           ; 2                            ;
-; 10                                          ; 3                            ;
-; 11                                          ; 7                            ;
-; 12                                          ; 4                            ;
-; 13                                          ; 3                            ;
-; 14                                          ; 2                            ;
-; 15                                          ; 7                            ;
-; 16                                          ; 18                           ;
+; 9                                           ; 3                            ;
+; 10                                          ; 7                            ;
+; 11                                          ; 6                            ;
+; 12                                          ; 3                            ;
+; 13                                          ; 4                            ;
+; 14                                          ; 7                            ;
+; 15                                          ; 8                            ;
+; 16                                          ; 20                           ;
 +---------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 0.67) ; Number of LABs  (Total = 57) ;
+; LAB-wide Signals  (Average = 0.64) ; Number of LABs  (Total = 69) ;
 +------------------------------------+------------------------------+
-; 1 Async. clear                     ; 8                            ;
-; 1 Clock                            ; 22                           ;
-; 1 Clock enable                     ; 7                            ;
+; 1 Async. clear                     ; 10                           ;
+; 1 Clock                            ; 23                           ;
+; 1 Clock enable                     ; 10                           ;
 ; 2 Clock enables                    ; 1                            ;
 +------------------------------------+------------------------------+
 
@@ -1569,106 +1621,110 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 13.33) ; Number of LABs  (Total = 57) ;
+; Number of Signals Sourced  (Average = 12.12) ; Number of LABs  (Total = 69) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
-; 1                                            ; 3                            ;
-; 2                                            ; 2                            ;
-; 3                                            ; 2                            ;
-; 4                                            ; 4                            ;
-; 5                                            ; 0                            ;
+; 1                                            ; 4                            ;
+; 2                                            ; 4                            ;
+; 3                                            ; 3                            ;
+; 4                                            ; 2                            ;
+; 5                                            ; 1                            ;
 ; 6                                            ; 1                            ;
-; 7                                            ; 1                            ;
-; 8                                            ; 1                            ;
-; 9                                            ; 3                            ;
-; 10                                           ; 3                            ;
+; 7                                            ; 8                            ;
+; 8                                            ; 2                            ;
+; 9                                            ; 1                            ;
+; 10                                           ; 5                            ;
 ; 11                                           ; 6                            ;
 ; 12                                           ; 1                            ;
 ; 13                                           ; 2                            ;
-; 14                                           ; 0                            ;
-; 15                                           ; 5                            ;
-; 16                                           ; 7                            ;
+; 14                                           ; 4                            ;
+; 15                                           ; 2                            ;
+; 16                                           ; 8                            ;
 ; 17                                           ; 1                            ;
 ; 18                                           ; 1                            ;
-; 19                                           ; 1                            ;
-; 20                                           ; 3                            ;
-; 21                                           ; 2                            ;
-; 22                                           ; 0                            ;
-; 23                                           ; 0                            ;
-; 24                                           ; 0                            ;
-; 25                                           ; 4                            ;
-; 26                                           ; 3                            ;
-; 27                                           ; 0                            ;
-; 28                                           ; 1                            ;
+; 19                                           ; 0                            ;
+; 20                                           ; 1                            ;
+; 21                                           ; 1                            ;
+; 22                                           ; 1                            ;
+; 23                                           ; 2                            ;
+; 24                                           ; 2                            ;
+; 25                                           ; 1                            ;
+; 26                                           ; 5                            ;
 +----------------------------------------------+------------------------------+
 
 
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 7.70) ; Number of LABs  (Total = 57) ;
+; Number of Signals Sourced Out  (Average = 7.55) ; Number of LABs  (Total = 69) ;
 +-------------------------------------------------+------------------------------+
 ; 0                                               ; 0                            ;
-; 1                                               ; 8                            ;
-; 2                                               ; 6                            ;
-; 3                                               ; 6                            ;
-; 4                                               ; 2                            ;
-; 5                                               ; 0                            ;
-; 6                                               ; 3                            ;
-; 7                                               ; 0                            ;
-; 8                                               ; 2                            ;
-; 9                                               ; 3                            ;
-; 10                                              ; 4                            ;
-; 11                                              ; 11                           ;
-; 12                                              ; 5                            ;
+; 1                                               ; 11                           ;
+; 2                                               ; 7                            ;
+; 3                                               ; 7                            ;
+; 4                                               ; 1                            ;
+; 5                                               ; 5                            ;
+; 6                                               ; 2                            ;
+; 7                                               ; 3                            ;
+; 8                                               ; 1                            ;
+; 9                                               ; 2                            ;
+; 10                                              ; 5                            ;
+; 11                                              ; 10                           ;
+; 12                                              ; 3                            ;
 ; 13                                              ; 2                            ;
-; 14                                              ; 1                            ;
+; 14                                              ; 2                            ;
 ; 15                                              ; 2                            ;
-; 16                                              ; 0                            ;
+; 16                                              ; 4                            ;
 ; 17                                              ; 0                            ;
 ; 18                                              ; 0                            ;
 ; 19                                              ; 0                            ;
 ; 20                                              ; 1                            ;
-; 21                                              ; 1                            ;
+; 21                                              ; 0                            ;
+; 22                                              ; 0                            ;
+; 23                                              ; 1                            ;
 +-------------------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 13.96) ; Number of LABs  (Total = 57) ;
+; Number of Distinct Inputs  (Average = 14.54) ; Number of LABs  (Total = 69) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
-; 1                                            ; 2                            ;
-; 2                                            ; 0                            ;
-; 3                                            ; 0                            ;
+; 1                                            ; 1                            ;
+; 2                                            ; 1                            ;
+; 3                                            ; 3                            ;
 ; 4                                            ; 4                            ;
 ; 5                                            ; 2                            ;
-; 6                                            ; 2                            ;
-; 7                                            ; 6                            ;
-; 8                                            ; 2                            ;
-; 9                                            ; 2                            ;
-; 10                                           ; 4                            ;
-; 11                                           ; 0                            ;
+; 6                                            ; 4                            ;
+; 7                                            ; 2                            ;
+; 8                                            ; 3                            ;
+; 9                                            ; 3                            ;
+; 10                                           ; 5                            ;
+; 11                                           ; 1                            ;
 ; 12                                           ; 1                            ;
 ; 13                                           ; 3                            ;
 ; 14                                           ; 1                            ;
-; 15                                           ; 5                            ;
-; 16                                           ; 1                            ;
-; 17                                           ; 2                            ;
-; 18                                           ; 2                            ;
+; 15                                           ; 1                            ;
+; 16                                           ; 3                            ;
+; 17                                           ; 0                            ;
+; 18                                           ; 4                            ;
 ; 19                                           ; 1                            ;
-; 20                                           ; 3                            ;
+; 20                                           ; 7                            ;
 ; 21                                           ; 2                            ;
-; 22                                           ; 0                            ;
+; 22                                           ; 3                            ;
 ; 23                                           ; 2                            ;
-; 24                                           ; 0                            ;
-; 25                                           ; 0                            ;
+; 24                                           ; 2                            ;
+; 25                                           ; 1                            ;
 ; 26                                           ; 2                            ;
-; 27                                           ; 4                            ;
-; 28                                           ; 1                            ;
+; 27                                           ; 1                            ;
+; 28                                           ; 2                            ;
 ; 29                                           ; 1                            ;
-; 30                                           ; 1                            ;
+; 30                                           ; 0                            ;
+; 31                                           ; 1                            ;
+; 32                                           ; 0                            ;
+; 33                                           ; 0                            ;
+; 34                                           ; 1                            ;
 +----------------------------------------------+------------------------------+
 
 
@@ -1729,9 +1785,9 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 ; Pin/Rules          ; IO_000001 ; IO_000002    ; IO_000003 ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007 ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000033 ; IO_000034    ; IO_000042    ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
-; Total Pass         ; 20        ; 0            ; 20        ; 0            ; 0            ; 20        ; 20        ; 0            ; 20        ; 20        ; 0            ; 14           ; 0            ; 0            ; 6            ; 0            ; 14           ; 6            ; 0            ; 0            ; 0            ; 14           ; 0            ; 0            ; 0            ; 0            ; 0            ; 20        ; 0            ; 0            ;
+; Total Pass         ; 22        ; 0            ; 22        ; 0            ; 0            ; 22        ; 22        ; 0            ; 22        ; 22        ; 0            ; 14           ; 0            ; 0            ; 8            ; 0            ; 14           ; 8            ; 0            ; 0            ; 0            ; 14           ; 0            ; 0            ; 0            ; 0            ; 0            ; 22        ; 0            ; 0            ;
 ; Total Unchecked    ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
-; Total Inapplicable ; 0         ; 20           ; 0         ; 20           ; 20           ; 0         ; 0         ; 20           ; 0         ; 0         ; 20           ; 6            ; 20           ; 20           ; 14           ; 20           ; 6            ; 14           ; 20           ; 20           ; 20           ; 6            ; 20           ; 20           ; 20           ; 20           ; 20           ; 0         ; 20           ; 20           ;
+; Total Inapplicable ; 0         ; 22           ; 0         ; 22           ; 22           ; 0         ; 0         ; 22           ; 0         ; 0         ; 22           ; 8            ; 22           ; 22           ; 14           ; 22           ; 8            ; 14           ; 22           ; 22           ; 22           ; 8            ; 22           ; 22           ; 22           ; 22           ; 22           ; 0         ; 22           ; 22           ;
 ; Total Fail         ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
 ; hsync              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; vsync              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -1747,8 +1803,10 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 ; blue[1]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; blue[2]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; blue[3]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; play               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; rst                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; clk                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; rst_game           ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; Up_btn_Left        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; Down_btn_Left      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; Up_btn_Right       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -1793,74 +1851,92 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +---------------------------+--------+
 
 
-+-------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Summary                                 ;
-+-------------------------------+---------------------------+-------------------+
-; Source Clock(s)               ; Destination Clock(s)      ; Delay Added in ns ;
-+-------------------------------+---------------------------+-------------------+
-; I/O                           ; divider:clk1|clk_out~reg0 ; 23.3              ;
-; divider:clk1|clk_out~reg0     ; clk                       ; 21.7              ;
-; clk                           ; clk                       ; 9.8               ;
-; divider:clk1|clk_out~reg0,I/O ; divider:clk1|clk_out~reg0 ; 9.3               ;
-+-------------------------------+---------------------------+-------------------+
++---------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Summary                             ;
++---------------------------+---------------------------+-------------------+
+; Source Clock(s)           ; Destination Clock(s)      ; Delay Added in ns ;
++---------------------------+---------------------------+-------------------+
+; divider:clk1|clk_out~reg0 ; rst_game                  ; 194.3             ;
+; divider:clk1|clk_out~reg0 ; clk                       ; 62.3              ;
+; divider:clk1|clk_out~reg0 ; divider:clk1|clk_out~reg0 ; 50.1              ;
+; I/O                       ; divider:clk1|clk_out~reg0 ; 13.2              ;
+; clk                       ; clk                       ; 9.6               ;
+; I/O                       ; rst_game                  ; 8.1               ;
++---------------------------+---------------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the TimeQuest Timing Analyzer.
 
 
-+------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Details                                ;
-+----------------------------+-----------------------------+-------------------+
-; Source Register            ; Destination Register        ; Delay Added in ns ;
-+----------------------------+-----------------------------+-------------------+
-; divider:clk1|clk_out~reg0  ; divider:clk1|clk_out~reg0   ; 5.270             ;
-; clk25                      ; clk25                       ; 4.501             ;
-; clk                        ; game:pongmove|y2[9]         ; 2.511             ;
-; divider:clk1|cnt[16]       ; divider:clk1|clk_out~reg0   ; 1.338             ;
-; divider:clk1|cnt[15]       ; divider:clk1|clk_out~reg0   ; 1.338             ;
-; divider:clk1|cnt[14]       ; divider:clk1|clk_out~reg0   ; 1.338             ;
-; divider:clk1|cnt[13]       ; divider:clk1|clk_out~reg0   ; 1.338             ;
-; divider:clk1|cnt[12]       ; divider:clk1|clk_out~reg0   ; 1.338             ;
-; divider:clk1|cnt[11]       ; divider:clk1|clk_out~reg0   ; 1.338             ;
-; divider:clk1|cnt[10]       ; divider:clk1|clk_out~reg0   ; 1.338             ;
-; divider:clk1|cnt[9]        ; divider:clk1|clk_out~reg0   ; 1.338             ;
-; divider:clk1|cnt[8]        ; divider:clk1|clk_out~reg0   ; 1.338             ;
-; divider:clk1|cnt[7]        ; divider:clk1|clk_out~reg0   ; 1.338             ;
-; divider:clk1|cnt[6]        ; divider:clk1|clk_out~reg0   ; 1.338             ;
-; divider:clk1|cnt[5]        ; divider:clk1|clk_out~reg0   ; 1.338             ;
-; divider:clk1|cnt[4]        ; divider:clk1|clk_out~reg0   ; 1.338             ;
-; divider:clk1|cnt[3]        ; divider:clk1|clk_out~reg0   ; 1.338             ;
-; divider:clk1|cnt[1]        ; divider:clk1|clk_out~reg0   ; 1.338             ;
-; divider:clk1|cnt[0]        ; divider:clk1|clk_out~reg0   ; 1.338             ;
-; divider:clk1|cnt[2]        ; divider:clk1|clk_out~reg0   ; 1.338             ;
-; game:pongmove|y2[2]        ; game:pongmove|ypos2[2]      ; 1.319             ;
-; game:pongmove|y2[0]        ; game:pongmove|ypos2[0]      ; 1.319             ;
-; game:pongmove|y1[2]        ; game:pongmove|ypos1[2]      ; 1.318             ;
-; game:pongmove|y1[3]        ; game:pongmove|ypos1[3]      ; 1.318             ;
-; game:pongmove|y1[1]        ; game:pongmove|ypos1[1]      ; 1.318             ;
-; game:pongmove|y2[4]        ; game:pongmove|ypos2[4]      ; 1.295             ;
-; game:pongmove|y2[7]        ; game:pongmove|y2[4]         ; 1.277             ;
-; game:pongmove|y2[6]        ; game:pongmove|y2[4]         ; 1.277             ;
-; game:pongmove|y2[5]        ; game:pongmove|y2[4]         ; 1.277             ;
-; game:pongmove|y2[3]        ; game:pongmove|y2[4]         ; 1.277             ;
-; game:pongmove|y2[8]        ; game:pongmove|y2[4]         ; 1.277             ;
-; game:pongmove|y2[1]        ; game:pongmove|y2[4]         ; 1.277             ;
-; game:pongmove|y2[9]        ; game:pongmove|y2[4]         ; 1.277             ;
-; Up_btn_Right               ; game:pongmove|y2[4]         ; 1.277             ;
-; Down_btn_Right             ; game:pongmove|y2[4]         ; 1.277             ;
-; game:pongmove|y1[7]        ; game:pongmove|y1[8]         ; 1.233             ;
-; game:pongmove|y1[6]        ; game:pongmove|y1[8]         ; 1.233             ;
-; game:pongmove|y1[5]        ; game:pongmove|y1[8]         ; 1.233             ;
-; game:pongmove|y1[8]        ; game:pongmove|y1[8]         ; 1.233             ;
-; game:pongmove|y1[4]        ; game:pongmove|y1[8]         ; 1.233             ;
-; game:pongmove|y1[9]        ; game:pongmove|y1[8]         ; 1.233             ;
-; Up_btn_Left                ; game:pongmove|y1[8]         ; 1.233             ;
-; Down_btn_Left              ; game:pongmove|y1[8]         ; 1.233             ;
-; game:pongmove|y1[0]        ; game:pongmove|y1[8]         ; 1.233             ;
-; game:pongmove|yball_dir[0] ; game:pongmove|yball_next[1] ; 0.889             ;
-; game:pongmove|xball_dir[0] ; game:pongmove|yball_next[1] ; 0.889             ;
-; vga_driver:driver|y[6]     ; vga_driver:driver|vsync     ; 0.013             ;
-+----------------------------+-----------------------------+-------------------+
-Note: This table only shows the top 47 path(s) that have the largest delay added for hold.
++---------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                                               ;
++-----------------------------+-------------------------------------------+-------------------+
+; Source Register             ; Destination Register                      ; Delay Added in ns ;
++-----------------------------+-------------------------------------------+-------------------+
+; game:pongmove|xball_next[3] ; game:pongmove|yball_speed[1]              ; 7.445             ;
+; game:pongmove|xball_next[6] ; game:pongmove|yball_speed[1]              ; 7.445             ;
+; game:pongmove|xball_next[8] ; game:pongmove|yball_speed[1]              ; 7.445             ;
+; game:pongmove|xball_next[2] ; game:pongmove|yball_speed[1]              ; 7.445             ;
+; game:pongmove|xball_next[4] ; game:pongmove|yball_speed[1]              ; 7.445             ;
+; game:pongmove|xball_next[5] ; game:pongmove|yball_speed[1]              ; 7.445             ;
+; game:pongmove|xball_next[7] ; game:pongmove|yball_speed[1]              ; 7.445             ;
+; game:pongmove|xball_next[1] ; game:pongmove|yball_speed[1]              ; 7.445             ;
+; game:pongmove|xball_next[0] ; game:pongmove|yball_speed[1]              ; 7.445             ;
+; game:pongmove|xball_next[9] ; game:pongmove|yball_speed[1]              ; 7.445             ;
+; game:pongmove|y2[1]         ; game:pongmove|yball_speed[1]              ; 7.223             ;
+; game:pongmove|y1[9]         ; game:pongmove|yball_speed[1]              ; 7.116             ;
+; game:pongmove|y2[0]         ; game:pongmove|yball_speed[1]              ; 7.096             ;
+; game:pongmove|y2[2]         ; game:pongmove|yball_speed[1]              ; 6.977             ;
+; rst_game                    ; game:pongmove|yball_speed[1]              ; 6.611             ;
+; game:pongmove|y2[3]         ; game:pongmove|yball_speed[1]              ; 6.608             ;
+; game:pongmove|y2[4]         ; game:pongmove|yball_speed[1]              ; 6.608             ;
+; game:pongmove|y2[5]         ; game:pongmove|yball_speed[1]              ; 6.608             ;
+; game:pongmove|y2[7]         ; game:pongmove|yball_speed[1]              ; 6.608             ;
+; game:pongmove|y2[8]         ; game:pongmove|yball_speed[1]              ; 6.608             ;
+; game:pongmove|y2[6]         ; game:pongmove|yball_speed[1]              ; 6.608             ;
+; game:pongmove|y2[9]         ; game:pongmove|yball_speed[1]              ; 6.608             ;
+; game:pongmove|y1[4]         ; game:pongmove|yball_speed[1]              ; 6.360             ;
+; game:pongmove|y1[3]         ; game:pongmove|yball_speed[1]              ; 6.301             ;
+; game:pongmove|y1[0]         ; game:pongmove|yball_speed[1]              ; 6.227             ;
+; game:pongmove|y1[8]         ; game:pongmove|yball_speed[1]              ; 6.168             ;
+; game:pongmove|y1[2]         ; game:pongmove|yball_speed[1]              ; 6.130             ;
+; game:pongmove|y1[7]         ; game:pongmove|yball_speed[1]              ; 6.081             ;
+; game:pongmove|y1[5]         ; game:pongmove|yball_speed[1]              ; 5.994             ;
+; game:pongmove|y1[6]         ; game:pongmove|yball_speed[1]              ; 5.965             ;
+; game:pongmove|y1[1]         ; game:pongmove|yball_speed[1]              ; 5.952             ;
+; game:pongmove|yball_next[9] ; game:pongmove|yball_speed[1]              ; 5.523             ;
+; divider:clk1|clk_out~reg0   ; divider:clk1|clk_out~reg0                 ; 5.118             ;
+; game:pongmove|yball_next[7] ; game:pongmove|yball_speed[1]              ; 4.986             ;
+; game:pongmove|yball_next[6] ; game:pongmove|yball_speed[1]              ; 4.957             ;
+; game:pongmove|yball_next[3] ; game:pongmove|yball_speed[1]              ; 4.909             ;
+; game:pongmove|yball_next[8] ; game:pongmove|yball_speed[1]              ; 4.847             ;
+; game:pongmove|yball_next[4] ; game:pongmove|yball_speed[1]              ; 4.762             ;
+; game:pongmove|yball_next[5] ; game:pongmove|yball_speed[1]              ; 4.681             ;
+; game:pongmove|yball_next[2] ; game:pongmove|yball_speed[1]              ; 4.546             ;
+; game:pongmove|yball_next[1] ; game:pongmove|yball_speed[1]              ; 4.544             ;
+; clk25                       ; clk25                                     ; 4.501             ;
+; game:pongmove|yball_next[0] ; game:pongmove|yball_speed[1]              ; 4.421             ;
+; clk                         ; game:pongmove|yballcenter[0]~_Duplicate_3 ; 2.805             ;
+; divider:clk1|cnt[16]        ; divider:clk1|clk_out~reg0                 ; 1.725             ;
+; divider:clk1|cnt[15]        ; divider:clk1|clk_out~reg0                 ; 1.725             ;
+; divider:clk1|cnt[14]        ; divider:clk1|clk_out~reg0                 ; 1.725             ;
+; divider:clk1|cnt[13]        ; divider:clk1|clk_out~reg0                 ; 1.725             ;
+; divider:clk1|cnt[12]        ; divider:clk1|clk_out~reg0                 ; 1.725             ;
+; divider:clk1|cnt[11]        ; divider:clk1|clk_out~reg0                 ; 1.725             ;
+; divider:clk1|cnt[10]        ; divider:clk1|clk_out~reg0                 ; 1.725             ;
+; divider:clk1|cnt[9]         ; divider:clk1|clk_out~reg0                 ; 1.725             ;
+; divider:clk1|cnt[8]         ; divider:clk1|clk_out~reg0                 ; 1.725             ;
+; divider:clk1|cnt[7]         ; divider:clk1|clk_out~reg0                 ; 1.725             ;
+; divider:clk1|cnt[6]         ; divider:clk1|clk_out~reg0                 ; 1.725             ;
+; divider:clk1|cnt[5]         ; divider:clk1|clk_out~reg0                 ; 1.725             ;
+; divider:clk1|cnt[4]         ; divider:clk1|clk_out~reg0                 ; 1.725             ;
+; divider:clk1|cnt[3]         ; divider:clk1|clk_out~reg0                 ; 1.725             ;
+; divider:clk1|cnt[1]         ; divider:clk1|clk_out~reg0                 ; 1.725             ;
+; divider:clk1|cnt[0]         ; divider:clk1|clk_out~reg0                 ; 1.725             ;
+; divider:clk1|cnt[2]         ; divider:clk1|clk_out~reg0                 ; 1.725             ;
+; Up_btn_Right                ; game:pongmove|y2[8]                       ; 0.248             ;
+; Down_btn_Right              ; game:pongmove|y2[8]                       ; 0.248             ;
++-----------------------------+-------------------------------------------+-------------------+
+Note: This table only shows the top 63 path(s) that have the largest delay added for hold.
 
 
 +-----------------+
@@ -1899,68 +1975,80 @@ Info (12825): nCSO dual-purpose pin not reserved
 Info (12825): DCLK dual-purpose pin not reserved
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
 Info (176045): Design uses memory blocks. Violating setup or hold times of memory block address registers for either read or write operations could cause memory contents to be corrupted. Make sure that all memory block address registers meet the setup and hold time requirements.
-Warning (335093): TimeQuest Timing Analyzer is analyzing 22 combinational loops as latches. For more details, run the Check Timing command in the TimeQuest Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
+Warning (335093): TimeQuest Timing Analyzer is analyzing 24 combinational loops as latches. For more details, run the Check Timing command in the TimeQuest Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'Pong.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
-Info (176353): Automatically promoted node clk~input (placed in PIN P11 (CLK7p, DIFFIO_TX_RX_B20p, DIFFOUT_B20p, High_Speed)) File: D:/Téléchargements/Pong_restored/Pong.vhd Line: 9
+Info (176353): Automatically promoted node clk~input (placed in PIN P11 (CLK7p, DIFFIO_TX_RX_B20p, DIFFOUT_B20p, High_Speed)) File: D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/Pong.vhd Line: 9
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G19
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node game:pongmove|yballcenter[1] File: D:/Téléchargements/Pong_restored/game.vhd Line: 68
-        Info (176357): Destination node game:pongmove|xballcenter[1] File: D:/Téléchargements/Pong_restored/game.vhd Line: 44
-        Info (176357): Destination node game:pongmove|xball_next[1] File: D:/Téléchargements/Pong_restored/game.vhd Line: 44
-        Info (176357): Destination node game:pongmove|y1[9]~2 File: D:/Téléchargements/Pong_restored/game.vhd Line: 139
-        Info (176357): Destination node game:pongmove|y1[8]~4 File: D:/Téléchargements/Pong_restored/game.vhd Line: 139
-        Info (176357): Destination node game:pongmove|y2[9]~2 File: D:/Téléchargements/Pong_restored/game.vhd Line: 163
-        Info (176357): Destination node game:pongmove|y2[8]~4 File: D:/Téléchargements/Pong_restored/game.vhd Line: 163
-        Info (176357): Destination node game:pongmove|yballcenter[2] File: D:/Téléchargements/Pong_restored/game.vhd Line: 68
-        Info (176357): Destination node game:pongmove|yballcenter[3] File: D:/Téléchargements/Pong_restored/game.vhd Line: 68
-        Info (176357): Destination node game:pongmove|yballcenter[4] File: D:/Téléchargements/Pong_restored/game.vhd Line: 68
+        Info (176357): Destination node game:pongmove|yball_next[0] File: D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/game.vhd Line: 83
+        Info (176357): Destination node game:pongmove|xball_next[0] File: D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/game.vhd Line: 48
+        Info (176357): Destination node game:pongmove|xball_next[9] File: D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/game.vhd Line: 48
+        Info (176357): Destination node game:pongmove|xball_next[8] File: D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/game.vhd Line: 48
+        Info (176357): Destination node game:pongmove|xball_next[7] File: D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/game.vhd Line: 48
+        Info (176357): Destination node game:pongmove|xball_next[6] File: D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/game.vhd Line: 48
+        Info (176357): Destination node game:pongmove|xball_next[5] File: D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/game.vhd Line: 48
+        Info (176357): Destination node game:pongmove|xball_next[4] File: D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/game.vhd Line: 48
+        Info (176357): Destination node game:pongmove|xball_next[3] File: D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/game.vhd Line: 48
+        Info (176357): Destination node game:pongmove|xball_next[2] File: D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/game.vhd Line: 48
         Info (176358): Non-global destination nodes limited to 10 nodes
-Info (176353): Automatically promoted node clk25  File: D:/Téléchargements/Pong_restored/Pong.vhd Line: 26
+Info (176353): Automatically promoted node clk25  File: D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/Pong.vhd Line: 30
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node clk25~0 File: D:/Téléchargements/Pong_restored/Pong.vhd Line: 26
-Info (176353): Automatically promoted node divider:clk1|clk_out~reg0  File: D:/Téléchargements/Pong_restored/divider.vhd Line: 22
+        Info (176357): Destination node clk25~0 File: D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/Pong.vhd Line: 30
+Info (176353): Automatically promoted node divider:clk1|clk_out~reg0  File: D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/divider.vhd Line: 22
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node divider:clk1|clk_out~0 File: D:/Téléchargements/Pong_restored/divider.vhd Line: 12
+        Info (176357): Destination node game:pongmove|yball_next[0] File: D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/game.vhd Line: 83
+        Info (176357): Destination node game:pongmove|xball_next[0] File: D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/game.vhd Line: 48
+        Info (176357): Destination node game:pongmove|xball_next[9] File: D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/game.vhd Line: 48
+        Info (176357): Destination node game:pongmove|xball_next[8] File: D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/game.vhd Line: 48
+        Info (176357): Destination node game:pongmove|xball_next[7] File: D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/game.vhd Line: 48
+        Info (176357): Destination node game:pongmove|xball_next[6] File: D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/game.vhd Line: 48
+        Info (176357): Destination node game:pongmove|xball_next[5] File: D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/game.vhd Line: 48
+        Info (176357): Destination node game:pongmove|xball_next[4] File: D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/game.vhd Line: 48
+        Info (176357): Destination node game:pongmove|xball_next[3] File: D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/game.vhd Line: 48
+        Info (176357): Destination node game:pongmove|xball_next[2] File: D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/game.vhd Line: 48
+        Info (176358): Non-global destination nodes limited to 10 nodes
+Info (176353): Automatically promoted node game:pongmove|yball_speed[0]~3  File: D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/game.vhd Line: 112
+    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
 Info (176233): Starting register packing
 Info (176235): Finished register packing
-    Extra Info (176218): Packed 94 registers into blocks of type Embedded multiplier block
-    Extra Info (176220): Created 78 register duplicates
+    Extra Info (176218): Packed 100 registers into blocks of type Embedded multiplier block
+    Extra Info (176220): Created 82 register duplicates
 Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:08
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:09
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 2% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 11% of the available device resources in the region that extends from location X45_Y11 to location X55_Y21
+    Info (170196): Router estimated peak interconnect usage is 12% of the available device resources in the region that extends from location X33_Y11 to location X44_Y21
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:06
-Info (11888): Total time spent on timing analysis during the Fitter is 1.53 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:10
+Info (11888): Total time spent on timing analysis during the Fitter is 2.82 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:05
-Info (144001): Generated suppressed messages file D:/Téléchargements/Pong_restored/output_files/Pong.fit.smsg
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:08
+Info (144001): Generated suppressed messages file D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/output_files/Pong.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 5400 megabytes
-    Info: Processing ended: Mon May 14 13:31:32 2018
-    Info: Elapsed time: 00:00:29
-    Info: Total CPU time (on all processors): 00:00:39
+    Info: Peak virtual memory: 5403 megabytes
+    Info: Processing ended: Wed May 16 12:02:02 2018
+    Info: Elapsed time: 00:00:38
+    Info: Total CPU time (on all processors): 00:00:51
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in D:/Téléchargements/Pong_restored/output_files/Pong.fit.smsg.
+The suppressed messages can be found in D:/OneDrive - Haute Ecole Léonard de Vinci/ECAM/(4EO_P2) Techniques digitales/TD4L_Pong_Project/output_files/Pong.fit.smsg.
 
 

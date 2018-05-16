@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Mon May 14 13:31:02 2018
+Analysis & Synthesis Status : Successful - Wed May 16 12:01:23 2018
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : Pong
 Top-level Entity Name : Pong
 Family : MAX 10
-Total logic elements : 699
-    Total combinational functions : 667
-    Dedicated logic registers : 145
-Total registers : 145
-Total pins : 20
+Total logic elements : 845
+    Total combinational functions : 819
+    Dedicated logic registers : 149
+Total registers : 149
+Total pins : 22
 Total virtual pins : 0
 Total memory bits : 921,600
 Embedded Multiplier 9-bit elements : 12

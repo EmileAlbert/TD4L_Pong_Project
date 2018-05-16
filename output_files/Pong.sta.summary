@@ -3,27 +3,43 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'clk25'
-Slack : -15.243
-TNS   : -5111.205
-
-Type  : Slow 1200mV 85C Model Setup 'clk'
-Slack : -3.786
-TNS   : -65.679
+Slack : -17.478
+TNS   : -5235.090
 
 Type  : Slow 1200mV 85C Model Setup 'divider:clk1|clk_out~reg0'
-Slack : -3.751
-TNS   : -210.135
+Slack : -6.511
+TNS   : -296.206
+
+Type  : Slow 1200mV 85C Model Setup 'rst_game'
+Slack : -6.271
+TNS   : -15.604
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -3.759
+TNS   : -85.956
 
 Type  : Slow 1200mV 85C Model Hold 'divider:clk1|clk_out~reg0'
-Slack : 0.342
+Slack : 0.378
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'clk'
-Slack : 0.410
+Slack : 0.422
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'clk25'
-Slack : 0.578
+Slack : 0.606
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'rst_game'
+Slack : 1.256
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'divider:clk1|clk_out~reg0'
+Slack : -2.911
+TNS   : -58.060
+
+Type  : Slow 1200mV 85C Model Removal 'divider:clk1|clk_out~reg0'
+Slack : 1.873
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk25'
@@ -32,34 +48,54 @@ TNS   : -1319.594
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divider:clk1|clk_out~reg0'
 Slack : -3.166
-TNS   : -227.084
+TNS   : -248.886
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
 Slack : -3.000
 TNS   : -29.657
 
-Type  : Slow 1200mV 0C Model Setup 'clk25'
-Slack : -13.867
-TNS   : -4643.915
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'rst_game'
+Slack : -3.000
+TNS   : -3.000
 
-Type  : Slow 1200mV 0C Model Setup 'clk'
-Slack : -3.439
-TNS   : -58.753
+Type  : Slow 1200mV 0C Model Setup 'clk25'
+Slack : -15.972
+TNS   : -4752.820
 
 Type  : Slow 1200mV 0C Model Setup 'divider:clk1|clk_out~reg0'
-Slack : -3.400
-TNS   : -195.862
+Slack : -5.868
+TNS   : -264.762
+
+Type  : Slow 1200mV 0C Model Setup 'rst_game'
+Slack : -5.647
+TNS   : -14.308
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -3.422
+TNS   : -78.530
 
 Type  : Slow 1200mV 0C Model Hold 'divider:clk1|clk_out~reg0'
-Slack : 0.307
+Slack : 0.339
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'clk'
-Slack : 0.377
+Slack : 0.390
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'clk25'
-Slack : 0.530
+Slack : 0.570
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'rst_game'
+Slack : 1.321
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'divider:clk1|clk_out~reg0'
+Slack : -2.600
+TNS   : -51.900
+
+Type  : Slow 1200mV 0C Model Removal 'divider:clk1|clk_out~reg0'
+Slack : 1.797
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk25'
@@ -68,39 +104,63 @@ TNS   : -1279.366
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divider:clk1|clk_out~reg0'
 Slack : -3.166
-TNS   : -227.084
+TNS   : -248.886
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
 TNS   : -29.657
 
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'rst_game'
+Slack : -3.000
+TNS   : -3.000
+
 Type  : Fast 1200mV 0C Model Setup 'clk25'
-Slack : -5.992
-TNS   : -1894.888
+Slack : -6.998
+TNS   : -1900.468
 
 Type  : Fast 1200mV 0C Model Setup 'divider:clk1|clk_out~reg0'
-Slack : -1.091
-TNS   : -75.845
+Slack : -2.387
+TNS   : -119.494
+
+Type  : Fast 1200mV 0C Model Setup 'rst_game'
+Slack : -1.926
+TNS   : -4.783
 
 Type  : Fast 1200mV 0C Model Setup 'clk'
-Slack : -1.075
-TNS   : -7.462
+Slack : -1.099
+TNS   : -16.611
 
 Type  : Fast 1200mV 0C Model Hold 'divider:clk1|clk_out~reg0'
-Slack : 0.149
+Slack : 0.166
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'clk'
-Slack : 0.163
+Slack : 0.168
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'clk25'
-Slack : 0.226
+Slack : 0.238
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'rst_game'
+Slack : 0.306
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'divider:clk1|clk_out~reg0'
+Slack : -1.353
+TNS   : -26.650
+
+Type  : Fast 1200mV 0C Model Removal 'divider:clk1|clk_out~reg0'
+Slack : 0.659
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -22.691
+TNS   : -22.565
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'rst_game'
+Slack : -3.000
+TNS   : -3.057
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk25'
 Slack : -1.000
@@ -108,6 +168,6 @@ TNS   : -562.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divider:clk1|clk_out~reg0'
 Slack : -1.000
-TNS   : -94.000
+TNS   : -102.000
 
 ------------------------------------------------------------

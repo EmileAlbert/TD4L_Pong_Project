@@ -23,9 +23,12 @@ Up_btn_Left => game:pongmove.Up_btn_Left
 Down_btn_Left => game:pongmove.Down_btn_Left
 Up_btn_Right => game:pongmove.Up_btn_Right
 Down_btn_Right => game:pongmove.Down_btn_Right
+rst_game => game:pongmove.rst_game
+play => game:pongmove.play
 
 
 |Pong|game:pongmove
+clk => xball_next[9].IN0
 clk => ypos2[9]$latch.LATCH_ENABLE
 clk => ypos2[8]$latch.LATCH_ENABLE
 clk => ypos2[7]$latch.LATCH_ENABLE
@@ -246,6 +249,32 @@ Down_btn_Right => y2.OUTPUTSELECT
 Down_btn_Right => y2.OUTPUTSELECT
 Down_btn_Right => y2.OUTPUTSELECT
 Down_btn_Right => y2.OUTPUTSELECT
+rst_game => xball_dir[0].IN1
+rst_game => xballcenter[0].OUTPUTSELECT
+rst_game => xballcenter[1].OUTPUTSELECT
+rst_game => xballcenter[2].OUTPUTSELECT
+rst_game => xballcenter[3].OUTPUTSELECT
+rst_game => xballcenter[4].OUTPUTSELECT
+rst_game => xballcenter[5].OUTPUTSELECT
+rst_game => xballcenter[6].OUTPUTSELECT
+rst_game => xballcenter[7].OUTPUTSELECT
+rst_game => xballcenter[8].OUTPUTSELECT
+rst_game => xballcenter[9].OUTPUTSELECT
+rst_game => xball_next[9].IN1
+rst_game => yballcenter[0].OUTPUTSELECT
+rst_game => yballcenter[1].OUTPUTSELECT
+rst_game => yballcenter[2].OUTPUTSELECT
+rst_game => yballcenter[3].OUTPUTSELECT
+rst_game => yballcenter[4].OUTPUTSELECT
+rst_game => yballcenter[5].OUTPUTSELECT
+rst_game => yballcenter[6].OUTPUTSELECT
+rst_game => yballcenter[7].OUTPUTSELECT
+rst_game => yballcenter[8].OUTPUTSELECT
+rst_game => yballcenter[9].OUTPUTSELECT
+rst_game => yball_speed[0].OUTPUTSELECT
+rst_game => yball_speed[0].IN1
+rst_game => yball_speed[1].OUTPUTSELECT
+play => ~NO_FANOUT~
 
 
 |Pong|divider:clk1

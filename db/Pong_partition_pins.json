@@ -32,6 +32,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "rst_game",
+					"strict" : false
+				},
+				{
 					"name" : "Up_btn_Left",
 					"strict" : false
 				},

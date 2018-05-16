@@ -81,7 +81,7 @@ architecture Behavioral of vga_driver is
 		elsif rising_edge(clk25) then
 				if x < to_unsigned(visible_x, 10) and y < to_unsigned(visible_y+60, 10) then
               xpos <= x;
-              ypos <= y;
+              ypos <= y - y_fp;
               --Color of the pixel on 12bits given by a pixval
 							red(3) 		  <= pixval(2);
 							green(3)		<= pixval(1);

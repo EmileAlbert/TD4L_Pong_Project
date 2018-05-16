@@ -35,7 +35,7 @@ begin
 	constant shipwidth 	: unsigned(9 downto 0) := to_unsigned(20,10);
 	constant shipheight 	: unsigned(9 downto 0) := to_unsigned(80,10);
 	constant ship1xpos	: unsigned(9 downto 0) := to_unsigned(40,10);
-	constant ship2xpos	: unsigned(9 downto 0) := to_unsigned(600,10);
+	constant ship2xpos	: unsigned(9 downto 0) := to_unsigned(580,10);
 	begin
 		if rst = '1' then
 			x     <= (others => '0');
@@ -59,14 +59,14 @@ begin
 			--Left	
 			elsif (x > (ship1xpos - shipwidth) and x < ship1xpos) then 
 				if (y > ypos1 and y < (ypos1 + shipheight)) then 
-					matrix(to_integer(y))(to_integer(x)) <= "111";
+					matrix(to_integer(y))(to_integer(x)) <= "100";
 				else
 					matrix(to_integer(y))(to_integer(x)) <= "000";
 				end if;
 			--Right	
 			elsif (x > ship2xpos and x < (ship2xpos+shipwidth)) then 
 				if (y > ypos2 and y < (ypos2 + shipheight)) then 
-					matrix(to_integer(y))(to_integer(x)) <= "111";
+					matrix(to_integer(y))(to_integer(x)) <= "001";
 				else
 					matrix(to_integer(y))(to_integer(x)) <= "000";
 				end if;
